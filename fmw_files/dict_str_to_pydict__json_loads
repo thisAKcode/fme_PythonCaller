@@ -1,0 +1,740 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME2019\fme.exe" M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\JSON\str_to_pydict.fmw
+#              --SourceDataset_TEXTLINE "M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\JSON\test2.txt"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2013.87 1099.52"
+#!   DOC_TOP_LEFT="107.506 -800.991"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="19813"
+#!   FME_DOCUMENT_GUID="2f0f8825-aa56-46fb-986a-b649f05c037b"
+#!   FME_DOCUMENT_PRIORGUID="eac95eac-829b-4ccd-9806-e45da4021cec"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.1.0 (20191202 - Build 19813 - WIN64)"
+#!   LAST_SAVE_DATE="2020-11-20T13:47:31"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-796.304 484.573"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="81"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="TEXTLINE"
+#!   DATASET="$(SourceDataset_TEXTLINE)"
+#!   KEYWORD="TEXTLINE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_fill_color char(50) text_line_length number(6,0) fme_primary_axis number(31,15) multi_reader_type char(50) fme_feature_type char(50) fme_basename char(50) fme_start_angle number(31,15) text_line_number number(11,0) multi_reader_keyword char(50) fme_geometry char(50) text_line_eol char(10) fme_rotation number(31,15) fme_color char(50) fme_secondary_axis number(31,15) fme_text_string char(50) fme_type char(50) multi_reader_id number(11,0) text_line_type char(64) fme_dataset char(50) fme_sweep_angle number(31,15) multi_reader_full_id number(11,0) fme_text_size number(31,15)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="19813"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="txt file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="text_line"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=""
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Text file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Text file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="TEXTLINE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="text_line"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="6"
+#!   FEAT_GEOMTYPE="text_line_none"
+#!   POSITION="203.00265002649996 -616.49073922837977"
+#!   BOUNDING_RECT="203.00265002649996 -616.49073922837977 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="TEXTLINE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="TEXTLINE_1"
+#!   OVERRIDE="-TEXTLINE_1_DATASET"
+#!   DATASET="TEXTLINE_1/test2.txt"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Text File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)test2.txt"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="2"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;read from plain text into fme workbench and get into python dict using  json module&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="107.50578097338894 -239.84807749312046"
+#!   TOP_LEFT="107.50578097338894 -239.84807749312046"
+#!   BOTTOM_RIGHT="1970.8509549189553 -424.84962750862059"
+#!   BOUNDING_RECT="107.50578097338894 -239.84807749312046 1863.3451739455663 185.00155001550013"
+#!   ORDER="500000000000001"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.22745098039215686,0.2627450980392157,0.27058823529411763,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="14"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;convert dictionary string to dictionary&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="107.50578097338894 298.53191451667612"
+#!   TOP_LEFT="107.50578097338894 298.53191451667612"
+#!   BOTTOM_RIGHT="1138.4898594561491 181.03103950792604"
+#!   BOUNDING_RECT="107.50578097338894 298.53191451667612 1030.9840784827602 117.50087500875007"
+#!   ORDER="500000000000011"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.45882352941176469,0.53725490196078429,0.21176470588235294,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="17"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="16"
+#!   NAME="way 2"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="111.00265002649996 -487.99073922837977"
+#!   ORDER="500000000000009"
+#!   PALETTE_COLOR="Color3"
+#!   BOTTOM_RIGHT="2121.3721455733071 -800.99073922837977"
+#!   BOUNDING_RECT="111.00265002649996 -487.99073922837977 2010.369495546807 313"
+#!   STICKY="true"
+#!   COLOUR="0.60784313725490191,0.46274509803921571,0.20784313725490197,1"
+#!   CONTENTS="3 6 7 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="17"
+#!   NAME="way 1 "
+#!   DESCRIPTION=""
+#!   TOP_LEFT="111.00265002649996 131.00002500024999"
+#!   ORDER="500000000000010"
+#!   PALETTE_COLOR="Color4"
+#!   BOTTOM_RIGHT="2106.1086000860005 -163.49997499975001"
+#!   BOUNDING_RECT="111.00265002649996 131.00002500024999 1995.1059500595006 294.5"
+#!   STICKY="true"
+#!   COLOUR="0.45882352941176469,0.53725490196078429,0.21176470588235294,1"
+#!   CONTENTS="19 18 11 13 12 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="879.50787507875054 -616.49073922837977"
+#!   BOUNDING_RECT="879.50787507875054 -616.49073922837977 454 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;json&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;data&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;text_line_data&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;grannar&lt;space&gt;=&lt;space&gt;json.loads&lt;openparen&gt;data&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;openparen&gt;&lt;quote&gt;success&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;openparen&gt;grannar&lt;closeparen&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="203.00265002649996 2.5000250002499911"
+#!   BOUNDING_RECT="203.00265002649996 2.5000250002499911 430 71"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="860.00860008600057 2.5000250002500053"
+#!   BOUNDING_RECT="860.00860008600057 2.5000250002500053 454 71"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; body SET_TO &lt;opencurly&gt;&lt;quote&gt;0&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;Omatchade_VNR_UNR&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;1&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;GEMENSAM&lt;space&gt;b&lt;u00f6&gt;r&lt;space&gt;vara&lt;space&gt;2&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;7&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;Inom&lt;space&gt;Tpl&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;12&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;PRVAGGREN=2&lt;comma&gt;&lt;space&gt;men&lt;space&gt;kan&lt;space&gt;ej&lt;space&gt;hitta&lt;space&gt;avfarter.&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;13&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;PRVAGGREN=3&lt;comma&gt;&lt;space&gt;men&lt;space&gt;kan&lt;space&gt;ej&lt;space&gt;hitta&lt;space&gt;avfarter.&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;13a&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;prvagren&lt;space&gt;b&lt;u00f6&gt;r&lt;space&gt;vara&lt;space&gt;inte&lt;space&gt;2&lt;space&gt;utan&lt;space&gt;10&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;14a&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;tpl&lt;space&gt;KANALISERAD&lt;space&gt;KORSNING&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;15a&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;default&lt;space&gt;trumma&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;16&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;GEMENSAM&lt;space&gt;borde&lt;space&gt;automatiskt&lt;space&gt;s&lt;u00e4&gt;ttas&lt;space&gt;till&lt;space&gt;1&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;17&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;prvagren&lt;space&gt;b&lt;u00f6&gt;r&lt;space&gt;vara&lt;space&gt;2&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;18&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;brunn&lt;space&gt;som&lt;space&gt;in&lt;solidus&gt;utlopp&lt;space&gt;sv&lt;u00e5&gt;rt&lt;space&gt;att&lt;space&gt;knyta&lt;space&gt;vid&lt;space&gt;m&lt;u00f6&gt;tesfri&lt;space&gt;v&lt;u00e4&gt;g&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;19&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;attribute&lt;space&gt;prvaggren&lt;space&gt;b&lt;u00f6&gt;r&lt;space&gt;granskas&lt;space&gt;manuellt.&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;2&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;Knyter&lt;space&gt;mot&lt;space&gt;C-plats&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;20&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;PRVAGGREN=4&lt;comma&gt;&lt;space&gt;men&lt;space&gt;kan&lt;space&gt;ej&lt;space&gt;hitta&lt;space&gt;avfarter.&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;21&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;many&lt;space&gt;culv&lt;space&gt;on&lt;space&gt;same&lt;space&gt;position&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;22&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;attribute&lt;space&gt;gemensam&lt;space&gt;b&lt;u00f6&gt;r&lt;space&gt;granskas&lt;space&gt;manuellt.&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;31&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;dubletter&lt;space&gt;for&lt;space&gt;samma&lt;space&gt;position&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;32&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;m&lt;u00e5&gt;nga&lt;space&gt;trummor&lt;space&gt;angivna&lt;space&gt;d&lt;u00e4&gt;r&lt;space&gt;det&lt;space&gt;finns&lt;space&gt;bara&lt;space&gt;1&lt;space&gt;trumma&lt;space&gt;inom&lt;space&gt;x&lt;space&gt;m.&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;33&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;dubletter&lt;space&gt;som&lt;space&gt;inte&lt;space&gt;har&lt;space&gt;r&lt;u00e4&gt;tt&lt;space&gt;TRUMANTAL&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;34&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;dubletter&lt;space&gt;p&lt;u00e5&gt;&lt;space&gt;m&lt;u00f6&gt;tesfri&lt;space&gt;v&lt;u00e4&gt;g&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;41&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;tratt&lt;space&gt;format&lt;comma&gt;&lt;space&gt;eller&lt;space&gt;v&lt;u00e4&gt;ldigt&lt;space&gt;m&lt;u00e4&gt;rklig&lt;space&gt;rektangul&lt;u00e4&gt;r&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;42&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;udda&lt;space&gt;dimensioner&lt;space&gt;t.ex.&lt;space&gt;slutar&lt;space&gt;med&lt;space&gt;10&lt;comma&gt;&lt;space&gt;20&lt;comma&gt;&lt;space&gt;...&lt;space&gt;90&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;43&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;cirkul&lt;u00e4&gt;r&lt;comma&gt;&lt;space&gt;f&lt;u00f6&gt;rv&lt;u00e4&gt;xlad&lt;space&gt;bredd&lt;space&gt;och&lt;space&gt;h&lt;u00f6&gt;jd&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;44&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;ledningsr&lt;u00f6&gt;r&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;55&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;lenght&lt;space&gt;migth&lt;space&gt;be&lt;space&gt;defective&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;korsn_typ:cirkulationsplats&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;cirkulationsplats&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;korsn_typ:kanaliseradkorsning&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;kanaliserad&lt;space&gt;korsning&lt;quote&gt;&lt;comma&gt;&lt;lf&gt;&lt;quote&gt;korsn_typ:trafikplats&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;trafikplats&lt;quote&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="1516.8442268578476 2.5000250002499911"
+#!   BOUNDING_RECT="1516.8442268578476 2.5000250002499911 454 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;json&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;data&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;body&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;using&lt;space&gt;json.loads&lt;openparen&gt;&lt;closeparen&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;#&lt;space&gt;convert&lt;space&gt;dictionary&lt;space&gt;string&lt;space&gt;to&lt;space&gt;dictionary&lt;space&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;grannar&lt;space&gt;=&lt;space&gt;json.loads&lt;openparen&gt;data&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;openparen&gt;&lt;quote&gt;success&lt;quote&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;for&lt;space&gt;k&lt;comma&gt;v&lt;space&gt;in&lt;space&gt;grannar.items&lt;openparen&gt;&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;print&lt;openparen&gt;k&lt;closeparen&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PythonCaller_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="7"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+GUI IGNORE SourceDataset_TEXTLINE_1,TEXTLINE_IN_FME_GROUP_NAMED1_TEXTLINE_1,TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1,TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1,TEXTLINE_IN_SKIP_LINES_TEXTLINE_1,TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1,TEXTLINE_IN_FME_GROUP_NAMED2_TEXTLINE_1,TEXTLINE_IN_ENCODING_TEXTLINE_1,TEXTLINE_IN_NETWORK_AUTHENTICATION_TEXTLINE_1
+DEFAULT_MACRO SourceDataset_TEXTLINE $(FME_MF_DIR)test2.txt
+GUI MULTIFILE SourceDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Text File(s):
+INCLUDE [ if {{$(SourceDataset_TEXTLINE)} == {}} { puts_real {Parameter 'SourceDataset_TEXTLINE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} TEXTLINE
+MULTI_READER_KEYWORD{0} TEXTLINE_1
+MULTI_READER_GEN_DIRECTIVES{0} SKIP_FOOTER,0,ENCODING,windows-1252,CREATE_FEATURE_TABLES_FROM_DATA,Yes,READ_BOTTOM_UP,NO,READ_WHOLE_FILE_AT_ONCE,YES,SKIP_LINES,0,_MERGE_SCHEMAS,YES,TEXTLINE_EXPOSE_FORMAT_ATTRS,,EXPOSE_ATTRS_GROUP,
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "TEXTLINE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER TEXTLINE TEXTLINE_1
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source
+# TextLine file. The user input is stored in a macro, which is then
+# used to define the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_TEXTLINE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER TEXTLINE TEXTLINE_1
+DEFAULT_MACRO SourceDataset_TEXTLINE_1 $(SourceDataset_TEXTLINE)
+GUI MULTIFILE SourceDataset_TEXTLINE_1 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Source Text File(s):
+DEFAULT_MACRO TEXTLINE_IN_FME_GROUP_NAMED1_TEXTLINE_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP TEXTLINE_IN_FME_GROUP_NAMED1_TEXTLINE_1 TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1%TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1%TEXTLINE_IN_SKIP_LINES_TEXTLINE_1%TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1 Reader Parameters
+DEFAULT_MACRO TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1 YES
+TEXTLINE_1_READ_WHOLE_FILE_AT_ONCE "$(TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1)"
+GUI ACTIVECHOICE TEXTLINE_IN_READ_WHOLE_FILE_AT_ONCE_TEXTLINE_1 YES,TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1,TEXTLINE_IN_SKIP_LINES_TEXTLINE_1,TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1%NO Read Whole File at Once:
+GUI LOOKUP TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1 <Unused>,NO 
+GUI LOOKUP TEXTLINE_IN_SKIP_LINES_TEXTLINE_1 <Unused>,0 
+GUI LOOKUP TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1 <Unused>,0 
+DEFAULT_MACRO TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1 NO
+TEXTLINE_1_READ_BOTTOM_UP "$(TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_IN_READ_BOTTOM_UP_TEXTLINE_1 Yes%No Read Bottom Up:
+DEFAULT_MACRO TEXTLINE_IN_SKIP_LINES_TEXTLINE_1 0
+TEXTLINE_1_SKIP_LINES "$(TEXTLINE_IN_SKIP_LINES_TEXTLINE_1)"
+GUI OPTIONAL INTEGER TEXTLINE_IN_SKIP_LINES_TEXTLINE_1 Number of Lines to Skip:
+DEFAULT_MACRO TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1 0
+TEXTLINE_1_SKIP_FOOTER "$(TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1)"
+GUI OPTIONAL INTEGER TEXTLINE_IN_SKIP_FOOTER_TEXTLINE_1 Number of Footer Lines to Skip:
+DEFAULT_MACRO TEXTLINE_IN_FME_GROUP_NAMED2_TEXTLINE_1 FME_DISCLOSURE_OPEN
+GUI OPTIONAL DISCLOSUREGROUP TEXTLINE_IN_FME_GROUP_NAMED2_TEXTLINE_1 TEXTLINE_IN_ENCODING_TEXTLINE_1 File Contents
+# =====================================================================
+# Allows to force the encoding of source text file
+DEFAULT_MACRO TEXTLINE_IN_ENCODING_TEXTLINE_1 utf-8
+TEXTLINE_1_ENCODING "$(TEXTLINE_IN_ENCODING_TEXTLINE_1)"
+GUI STRING_OR_ENCODING TEXTLINE_IN_ENCODING_TEXTLINE_1 fme-system%* Character Encoding:
+# =====================================================================
+# Allow dynamic exposing of FORMAT ATTRIBUTES on the schema
+DEFAULT_MACRO TEXTLINE_IN_EXPOSE_ATTRS_GROUP_TEXTLINE_1 
+TEXTLINE_1_EXPOSE_ATTRS_GROUP "$(TEXTLINE_IN_EXPOSE_ATTRS_GROUP_TEXTLINE_1)"
+DEFAULT_MACRO TEXTLINE_IN_CREATE_FEATURE_TABLES_FROM_DATA_TEXTLINE_1 Yes
+TEXTLINE_1_CREATE_FEATURE_TABLES_FROM_DATA "$(TEXTLINE_IN_CREATE_FEATURE_TABLES_FROM_DATA_TEXTLINE_1)"
+# ===========================================================================
+DEFAULT_MACRO TEXTLINE_IN_NETWORK_AUTHENTICATION_TEXTLINE_1 
+TEXTLINE_1_NETWORK_AUTHENTICATION "$(TEXTLINE_IN_NETWORK_AUTHENTICATION_TEXTLINE_1)"
+GUI OPTIONAL AUTHENTICATOR TEXTLINE_IN_NETWORK_AUTHENTICATION_TEXTLINE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO TEXTLINE_IN_ATTRIBUTE_READING_TEXTLINE_1 ALL
+TEXTLINE_1_ATTRIBUTE_READING "$(TEXTLINE_IN_ATTRIBUTE_READING_TEXTLINE_1)"
+# ============================================================================ 
+TEXTLINE_1_GENERATE_FME_BUILD_NUM 19813
+TEXTLINE_1_DATASET "$(SourceDataset_TEXTLINE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)str_to_pydict.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_1 TEXTLINE_1
+# -------------------------------------------------------------------------
+
+TEXTLINE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME str_to_pydict
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_TEXTLINE_1)   INPUT FEATURE_TYPE *    ROUTE TEXTLINE TEXTLINE_1::text_line multi_reader_keyword,$(DATASET_KEYWORD_TEXTLINE_1) TO FME_GENERIC ::text_line ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+TEXTLINE_1_MERGE_DEF TEXTLINE_1::text_line EXACT text_line
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "text_line (TEXTLINE_1) Splitter"    INPUT FEATURE_TYPE text_line    OUTPUT FEATURE_TYPE text_line_TEXTLINE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF $(Creator_XML) CreationFactory    FACTORY_NAME Creator_XML_Creator    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>)
+FACTORY_DEF $(Creator_CLASSIC) CreationFactory    FACTORY_NAME Creator_CLASSIC_Creator    $(Creator_2D3D) $(Creator_COORDS)    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * TeeFactory    FACTORY_NAME Creator_Cloner    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES 1    COPY_NUMBER_ATTRIBUTE "_creation_instance"    OUTPUT FEATURE_TYPE Creator_CREATED        fme_feature_type Creator
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED Brancher -1 13"   INPUT FEATURE_TYPE Creator_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "body" "SET_TO" "<opencurly><quote>0<quote>:<space><quote>Omatchade_VNR_UNR<quote><comma><lf><quote>1<quote>:<space><quote>GEMENSAM<space>b<u00f6>r<space>vara<space>2<quote><comma><lf><quote>7<quote>:<space><quote>Inom<space>Tpl<quote><comma><lf><quote>12<quote>:<space><quote>PRVAGGREN=2<comma><space>men<space>kan<space>ej<space>hitta<space>avfarter.<quote><comma><lf><quote>13<quote>:<space><quote>PRVAGGREN=3<comma><space>men<space>kan<space>ej<space>hitta<space>avfarter.<quote><comma><lf><quote>13a<quote>:<space><quote>prvagren<space>b<u00f6>r<space>vara<space>inte<space>2<space>utan<space>10<quote><comma><lf><quote>14a<quote>:<space><quote>tpl<space>KANALISERAD<space>KORSNING<quote><comma><lf><quote>15a<quote>:<space><quote>default<space>trumma<quote><comma><lf><quote>16<quote>:<space><quote>GEMENSAM<space>borde<space>automatiskt<space>s<u00e4>ttas<space>till<space>1<quote><comma><lf><quote>17<quote>:<space><quote>prvagren<space>b<u00f6>r<space>vara<space>2<quote><comma><lf><quote>18<quote>:<space><quote>brunn<space>som<space>in<solidus>utlopp<space>sv<u00e5>rt<space>att<space>knyta<space>vid<space>m<u00f6>tesfri<space>v<u00e4>g<quote><comma><lf><quote>19<quote>:<space><quote>attribute<space>prvaggren<space>b<u00f6>r<space>granskas<space>manuellt.<quote><comma><lf><quote>2<quote>:<space><quote>Knyter<space>mot<space>C-plats<quote><comma><lf><quote>20<quote>:<space><quote>PRVAGGREN=4<comma><space>men<space>kan<space>ej<space>hitta<space>avfarter.<quote><comma><lf><quote>21<quote>:<space><quote>many<space>culv<space>on<space>same<space>position<quote><comma><lf><quote>22<quote>:<space><quote>attribute<space>gemensam<space>b<u00f6>r<space>granskas<space>manuellt.<quote><comma><lf><quote>31<quote>:<space><quote>dubletter<space>for<space>samma<space>position<quote><comma><lf><quote>32<quote>:<space><quote>m<u00e5>nga<space>trummor<space>angivna<space>d<u00e4>r<space>det<space>finns<space>bara<space>1<space>trumma<space>inom<space>x<space>m.<quote><comma><lf><quote>33<quote>:<space><quote>dubletter<space>som<space>inte<space>har<space>r<u00e4>tt<space>TRUMANTAL<quote><comma><lf><quote>34<quote>:<space><quote>dubletter<space>p<u00e5><space>m<u00f6>tesfri<space>v<u00e4>g<quote><comma><lf><quote>41<quote>:<space><quote>tratt<space>format<comma><space>eller<space>v<u00e4>ldigt<space>m<u00e4>rklig<space>rektangul<u00e4>r<quote><comma><lf><quote>42<quote>:<space><quote>udda<space>dimensioner<space>t.ex.<space>slutar<space>med<space>10<comma><space>20<comma><space>...<space>90<quote><comma><lf><quote>43<quote>:<space><quote>cirkul<u00e4>r<comma><space>f<u00f6>rv<u00e4>xlad<space>bredd<space>och<space>h<u00f6>jd<quote><comma><lf><quote>44<quote>:<space><quote>ledningsr<u00f6>r<quote><comma><lf><quote>55<quote>:<space><quote>lenght<space>migth<space>be<space>defective<quote><comma><lf><quote>korsn_typ:cirkulationsplats<quote>:<space><quote>cirkulationsplats<quote><comma><lf><quote>korsn_typ:kanaliseradkorsning<quote>:<space><quote>kanaliserad<space>korsning<quote><comma><lf><quote>korsn_typ:trafikplats<quote>:<space><quote>trafikplats<quote><closecurly>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller_2    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf>import<space>json<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>data<space>=<space>feature.getAttribute<openparen><apos>body<apos><closeparen><lf><space><space><space><space><lf><space><space><space><space>#<space>using<space>json.loads<openparen><closeparen><space><lf><space><space><space><space>#<space>convert<space>dictionary<space>string<space>to<space>dictionary<space><lf><lf><space><space><space><space>grannar<space>=<space>json.loads<openparen>data<closeparen><lf><space><space><space><space>print<openparen><quote>success<quote><closeparen><lf><space><space><space><space><lf><space><space><space><space>for<space>k<comma>v<space>in<space>grannar.items<openparen><closeparen>:<lf><space><space><space><space><space><space><space><space>print<openparen>k<closeparen><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_2_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller_2 OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE PythonCaller_2_OUTPUT
+# -------------------------------------------------------------------------
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+FACTORY_DEF * PythonFactory    FACTORY_NAME PythonCaller    INPUT  FEATURE_TYPE text_line_TEXTLINE_1    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf>import<space>json<lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>data<space>=<space>feature.getAttribute<openparen><apos>text_line_data<apos><closeparen><lf><space><space><space><space>grannar<space>=<space>json.loads<openparen>data<closeparen><lf><space><space><space><space>print<openparen><quote>success<quote><closeparen><lf><space><space><space><space>print<openparen>grannar<closeparen><lf>    OUTPUT PYOUTPUT FEATURE_TYPE PythonCaller_OUTPUT
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PythonCaller OUTPUT Transformer Output Nuker"   INPUT FEATURE_TYPE PythonCaller_OUTPUT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
