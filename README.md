@@ -21,4 +21,13 @@ def processFeature(feature):
     for i, j in enumerate(b):
         feature.setAttribute('list{'+str(i)+'}',j)
 ```
-
+## 2. access *.py file from within fme
+source : <https://community.safe.com/s/question/0D54Q000080hSCgSAM/general-class-in-python-where-to-place>
+```
+import fmeobjects
+import sys
+sys.path.append('$(FME_SHAREDRESOURCE_DATA)python')
+import my_module
+class FeatureProcessor(object):
+    ... blablabla
+```
