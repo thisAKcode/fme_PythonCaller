@@ -31,3 +31,24 @@ import my_module
 class FeatureProcessor(object):
     ... blablabla
 ```
+## 3. compare two fme lists
+```
+import fme
+import fmeobjects
+
+# attributes relevant for BEDOM_INTERVALL
+RELEVANT_FIELDS = ['1','2', '3','4','5', '6', '7'] 
+"""
+    if at least one element in updated == at least one element in RELEVANT_FIELDS:
+        force compute and update for BEDOM_INTERVALL field
+        status_bedom_intervall = 'recompute'
+"""
+
+def processFeature(feature):
+    updated = feature.getAttribute('list{}.attributeName')
+    
+    if updated:
+        OVERLAP = (set(updated) & set(RELEVANT_FIELDS))    
+        if OVERLAP:
+            feature.setAttribute("CHANGE_BI_OPERATION", 'change')
+``` 
