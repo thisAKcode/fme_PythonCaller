@@ -334,7 +334,7 @@ left join GDI_VAGDATA.[VAGTRUMMA_AGGREGAT] on GDI_VAGDATA.[VAGTRUMMA_AGGREGAT].G
 
 
 # collections.Counter
-
+``` 
 import fme
 import fmeobjects
 import collections
@@ -348,3 +348,19 @@ def concat_list(feature):
     cnt_elmnts2 = collections.Counter(some_var2).most_common()
     feature.setAttribute('result_invorg', str(cnt_elmnts))
     feature.setAttribute('result_invdate', str(cnt_elmnts2))
+``` 
+
+# counter 2
+```
+import fme
+import fmeobjects
+import collections
+
+def concat_list(feature):
+    # logger = fmeobjects.FMELogFile()
+    # logger.logMessageString("Hello, I am Logging Now")
+    some_var = feature.getAttribute('_list{}')
+    cnt_elmnts = collections.Counter(some_var)
+    feature.setAttribute('result', str(cnt_elmnts))
+
+```
