@@ -331,3 +331,20 @@ select GDI_VAGDATA.[VAGTRUMMA_AGGREGAT].GlobalID as GlobalID_Ag, GDI_VAGDATA.[VA
 from GDI_VAGDATA.[TRUMINVENTERING_V5]
 left join GDI_VAGDATA.[VAGTRUMMA_AGGREGAT] on GDI_VAGDATA.[VAGTRUMMA_AGGREGAT].GlobalID = GDI_VAGDATA.[TRUMINVENTERING_V5].[GlobalID]
 ``` 
+
+
+# collections.Counter
+
+import fme
+import fmeobjects
+import collections
+# Template Function interface:
+# When using this function, make sure its name is set as the value of
+# the 'Class or Function to Process Features' transformer parameter
+def concat_list(feature):
+    some_var = feature.getAttribute('_list{}.REDORG')
+    cnt_elmnts = collections.Counter(some_var).most_common()
+    some_var2 = feature.getAttribute('_list{}.REDDATUM')
+    cnt_elmnts2 = collections.Counter(some_var2).most_common()
+    feature.setAttribute('result_invorg', str(cnt_elmnts))
+    feature.setAttribute('result_invdate', str(cnt_elmnts2))
