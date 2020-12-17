@@ -214,3 +214,20 @@ cbp=“cbp” Street View window that accepts 5 parameters:
 2) Rotation angle/bearing (in degrees) 
 3) Tilt angle, -90 (straight up) to 90 (straight down) 
 ``` 
+# parse json body returned as plain string
+
+``` 
+import fme
+import fmeobjects
+import json
+
+
+def processFeature(feature):
+    data = '[' + feature.getAttribute('_response_body') + ']'
+    info = json.loads(data)     # {'distance': 166842, 'title': 'Oslo', 'location_type': 'City', 'woeid': 862592, 'latt_long': '59.912281,10.749980'}
+    num_items = len(info)
+    
+    for i in range(num_items):
+        distance = info[i]['distance']
+        feature.setAttribute("grannar", json.dumps(distance))
+``` 
