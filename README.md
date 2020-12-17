@@ -197,4 +197,20 @@ PrevSampleDateTime = feature[-1].sampleDateTime
 
 
 # Create an attribute that gives you path to google street view at some particular location
+``` 
 http://maps.google.com/?cbll=@Value(GPS_koordinat)&cbp=12,20.09,,0,5&layer=c?hl=sv 
+
+http://maps.google.com/?cbll=59.6670184,12.9099721&cbp=12,20.09,,0,5&layer=c?hl=sv 
+  
+59.6670184,12.9099721 
+58.36219232550405, 12.458045063716435
+  
+  
+  
+cbll= “cbll” is latitude,longitude for Street View. 
+cbp=“cbp” Street View window that accepts 5 parameters: 
+  
+1) Street View/map arrangement, 12=mostly Street View with corner map 
+2) Rotation angle/bearing (in degrees) 
+3) Tilt angle, -90 (straight up) to 90 (straight down) 
+``` 
