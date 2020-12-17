@@ -72,3 +72,34 @@ def processFeature(feature):
     #changes = ','.join(subzip_lst)
     #print(changes)
 ``` 
+
+
+## interpolate
+``` 
+import fme
+import fmeobjects
+# Template Function interface:
+# When using this function, make sure its name is set as the value of
+# the 'Class or Function to Process Features' transformer parameter
+def processFeature(feature):
+    pass
+
+# Template Class Interface:
+# When using this class, make sure its name is set as the value of
+# the 'Class or Function to Process Features' transformer parameter
+class FeatureProcessor(object):
+    def __init__(self):
+        pass
+    def input(self,feature):
+        a = feature.getAttribute('_indices{}.z')
+        a = list(map(int,a))
+        for idx, val in enumerate(a):
+            if val == -99999:
+                s=(a[idx-1]+a[idx+1])/2
+                a[idx] = s
+                feature.setAttribute('_indices{'+str(idx)+'}.z',a[idx])
+        self.pyoutput(feature)
+    def close(self):
+        pass
+
+``` 
