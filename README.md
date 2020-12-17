@@ -188,3 +188,9 @@ class FeatureProcessor(object):
         self.pyoutput(p2[0])
         self.pyoutput(p2[1])
 ``` 
+
+# Enable Adjacent Feature Attributes
+
+``` 
+PrevSampleDateTime = feature[-1].sampleDateTime
+``` 
