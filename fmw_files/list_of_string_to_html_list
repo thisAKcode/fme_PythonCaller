@@ -1,0 +1,2272 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME2019\fme.exe" M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\html_href_foto\html_kommando_to_transform_string_to_link.fmw
+#              --DestDataset_HTML "M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\html_href_foto\test.html"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="7899.11 3802.45"
+#!   DOC_TOP_LEFT="-1993.69 -1199.57"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="19813"
+#!   FME_DOCUMENT_GUID="c6eac1f6-3baa-419d-ade0-bcd106a5b272"
+#!   FME_DOCUMENT_PRIORGUID="94118cf0-4316-4522-bde1-3df09f7d7bc8,a5c8b27a-97ce-48ab-868d-6f3ff31bdfa8,478be0e2-fbf8-49be-b0e9-10bfecb4605a,4840c98e-bf56-4c94-917b-08144d811f1d,a90e8025-1da5-47cf-9822-28f2f9b48ece,793aa7b5-9216-4ce0-8917-faf5ef8c4109,99bca9cb-f968-4449-b797-d80b8fe89229,26c8394b-eebd-4976-85c9-38269bc04fc4"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.1.0 (20191202 - Build 19813 - WIN64)"
+#!   LAST_SAVE_DATE="2020-12-17T16:49:22"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="2or3"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-2452.56 3041.17"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="79"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="HTML"
+#!   DATASET="$(DestDataset_HTML)"
+#!   KEYWORD="HTML_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES="HTML"
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_fill_color char(50) html_eol char(10) fme_feature_type char(50) fme_basename char(50) fme_secondary_axis number(31,15) fme_geometry char(50) fme_rotation number(31,15) fme_primary_axis number(31,15) fme_sweep_angle number(31,15) fme_text_string char(50) fme_color char(50) fme_text_size number(31,15) fme_type char(50) fme_start_angle number(31,15) fme_dataset char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="19813"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="HTML file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="HTML"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/html"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the HTML file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the HTML file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="HTML"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="HTML"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="HTML"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="html_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="HTML"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="HTML"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="html_none"
+#!   POSITION="5451.4154121825131 -264.38246659141544"
+#!   BOUNDING_RECT="5451.4154121825131 -264.38246659141544 454 71"
+#!   ORDER="500000000001441.38"
+#!   COLLAPSED="false"
+#!   KEYWORD="HTML_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="html_content" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <WRITER_DATASETS>
+#! <DATASET 
+#!   NAME="HTML_1"
+#!   OVERRIDE="-HTML_1_DATASET"
+#!   DATASET="HTML_1/test.html"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_HTML HTML&lt;space&gt;Files(*.html)|*.html Destination Html File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)test.html"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="69"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;the list ordinary unordered list of items, &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;each item contains a link, link has a reference and linkable text (marked as ordinary link&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; Descriptive text to accompany the actual link. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2897.1505244758364 -439.47221656277293"
+#!   TOP_LEFT="2897.1505244758364 -439.47221656277293"
+#!   BOTTOM_RIGHT="3969.0362433330256 -997.60249786558597"
+#!   BOUNDING_RECT="2897.1505244758364 -439.47221656277293 1071.8857188571892 558.13028130281305"
+#!   ORDER="500000000001428.38"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="12"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="70"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt;&amp;lt;ul&amp;gt;  &lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt; &amp;lt;li&amp;gt;item 1&amp;lt;/li&amp;gt;    &lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt; &amp;lt;li&amp;gt;item 2&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt; &amp;lt;li&amp;gt;item 3&amp;lt;/li&amp;gt; &lt;/span&gt;&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt;&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2867.9084259197025 2330.4768286302215"
+#!   TOP_LEFT="2867.9084259197025 2330.4768286302215"
+#!   BOTTOM_RIGHT="3153.9941530744427 2119.2250161120965"
+#!   BOUNDING_RECT="2867.9084259197025 2330.4768286302215 286.08572715473997 211.25181251812518"
+#!   ORDER="500000000001461.38"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="22"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="80"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;create list items&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2201.5232367988233 2233.6008598705339"
+#!   TOP_LEFT="2201.5232367988233 2233.6008598705339"
+#!   BOTTOM_RIGHT="2655.5232367988233 2232.6008598705339"
+#!   BOUNDING_RECT="2201.5232367988233 2233.6008598705339 454 1"
+#!   ORDER="500000000001474.38"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="25"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="81"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;the list ordinary unordered list of items, each item contains a link, link has a reference and linkable text (marked as ordinary link). Descriptive text to accompany the actual link. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1179.7994914013871 2274.7736745061125"
+#!   TOP_LEFT="1179.7994914013871 2274.7736745061125"
+#!   BOTTOM_RIGHT="1716.7893197919323 1957.2707994773623"
+#!   BOUNDING_RECT="1179.7994914013871 2274.7736745061125 536.9898283905452 317.50287502875028"
+#!   ORDER="500000000001475.38"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="19"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="74"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;object empty of pics&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="302.93122449522366 2163.6749355348124"
+#!   TOP_LEFT="302.93122449522366 2163.6749355348124"
+#!   BOTTOM_RIGHT="917.73069629430438 1964.9232480179373"
+#!   BOUNDING_RECT="302.93122449522366 2163.6749355348124 614.79947179908072 198.75168751687517"
+#!   ORDER="500000000001472.38"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="84"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="66"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;foto1_ containting html &amp;lt;command&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-345.63824943706811 2229.1195670845068"
+#!   TOP_LEFT="-345.63824943706811 2229.1195670845068"
+#!   BOTTOM_RIGHT="193.46547241816654 1958.4921608104441"
+#!   BOUNDING_RECT="-345.63824943706811 2229.1195670845068 539.10372185523465 270.62740627406276"
+#!   ORDER="500000000001481.38"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="18"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="92"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; hur allt gick&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2354.1857288338979 1065.7255604194615"
+#!   TOP_LEFT="2354.1857288338979 1065.7255604194615"
+#!   BOTTOM_RIGHT="2974.1867970916273 1064.7255604194615"
+#!   BOUNDING_RECT="2354.1857288338979 1065.7255604194615 620.00106825772946 1"
+#!   ORDER="500000000002283.5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="85"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="93"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;läg till arcsde &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1345.5511667743122 1608.1169405216024"
+#!   TOP_LEFT="1345.5511667743122 1608.1169405216024"
+#!   BOTTOM_RIGHT="2231.8603221893445 1607.1169405216024"
+#!   BOUNDING_RECT="1345.5511667743122 1608.1169405216024 886.30915541503236 1"
+#!   ORDER="500000000003653.5"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="79"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="71"
+#!   NAME="popup content"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-395.5735759889244 2602.8741300071229"
+#!   ORDER="500000000001443.38"
+#!   PALETTE_COLOR=""
+#!   BOTTOM_RIGHT="3920.1341380502422 1712.8335840320428"
+#!   BOUNDING_RECT="-395.5735759889244 2602.8741300071229 4315.7077140391666 890.04054597508002"
+#!   STICKY="true"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,1"
+#!   CONTENTS="80 58 32 74 76 19 66 22 89 90 25 52 70 84 68 75 72 77 81 18 29 30 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="622.02267216813993 -301.87121043323714"
+#!   BOUNDING_RECT="622.02267216813993 -301.87121043323714 516.97973092778648 71"
+#!   ORDER="500000000001419.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; foto1_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;1&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto1&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto2_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;2&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto2&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto3_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;3&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto3&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto4_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;4&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto4&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto5_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;5&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto5&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto6_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;6&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto6&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto7_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;7&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto7&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto8_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;8&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto8&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  googleStreet_ SET_TO &lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;googleStreet&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Streetview&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_11"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="-914.42090891497151 -721.5513331603903"
+#!   BOUNDING_RECT="-914.42090891497151 -721.5513331603903 430 71"
+#!   ORDER="500000000001421.38"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="52.610859180487182 -301.87121043323714"
+#!   BOUNDING_RECT="52.610859180487182 -301.87121043323714 430 71"
+#!   ORDER="500000000001422.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Foto&lt;space&gt;1 SET_TO &lt;backslash&gt;&lt;backslash&gt;trafikverket.local&lt;backslash&gt;Appl&lt;backslash&gt;VagdataFilarea&lt;backslash&gt;Foton_vagtrumma&lt;backslash&gt;O_614&lt;backslash&gt;8775DF2D-B20F-4715-9BA4-61AC69AC036F.jpg  Foto&lt;space&gt;2 SET_TO &lt;backslash&gt;&lt;backslash&gt;trafikverket.local&lt;backslash&gt;Appl&lt;backslash&gt;VagdataFilarea&lt;backslash&gt;Foton_vagtrumma&lt;backslash&gt;O_614&lt;backslash&gt;ED3859BE-57C0-40FC-86CA-1C75D5B6CD62.jpg  Foto&lt;space&gt;3 SET_TO &lt;backslash&gt;&lt;backslash&gt;trafikverket.local&lt;backslash&gt;Appl&lt;backslash&gt;VagdataFilarea&lt;backslash&gt;Foton_vagtrumma&lt;backslash&gt;O_614&lt;backslash&gt;3E132654-76B9-4CA8-A6DE-301DD08E3A1D.jpg  Foto&lt;space&gt;4 SET_TO   Foto&lt;space&gt;5 SET_TO   Foto&lt;space&gt;6 SET_TO   Foto&lt;space&gt;7 SET_TO   Foto&lt;space&gt;8 SET_TO   googleStreet SET_TO http:&lt;solidus&gt;&lt;solidus&gt;maps.google.com&lt;solidus&gt;?cbll=57.90253692821303&lt;comma&gt;&lt;space&gt;11.850481051772357&lt;amp&gt;cbp=12&lt;comma&gt;20.09&lt;comma&gt;&lt;comma&gt;0&lt;comma&gt;5&lt;amp&gt;layer=c?hl=sv"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="Cloner"
+#!   VERSION="0"
+#!   POSITION="-423.51322206032512 -775.00094173055015"
+#!   BOUNDING_RECT="-423.51322206032512 -775.00094173055015 454 71"
+#!   ORDER="500000000001425.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="COPY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COPIES" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="COPYATT" PARM_VALUE="_copynum"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Cloner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="102.74634053530065 -775.00094173055015"
+#!   BOUNDING_RECT="102.74634053530065 -775.00094173055015 430 71"
+#!   ORDER="500000000001422.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Foto&lt;space&gt;1 SET_TO   Foto&lt;space&gt;2 SET_TO   Foto&lt;space&gt;3 SET_TO   Foto&lt;space&gt;4 SET_TO   Foto&lt;space&gt;5 SET_TO   Foto&lt;space&gt;6 SET_TO   Foto&lt;space&gt;7 SET_TO   Foto&lt;space&gt;8 SET_TO   googleStreet SET_TO http:&lt;solidus&gt;&lt;solidus&gt;maps.google.com&lt;solidus&gt;?cbll=57.90253692821303&lt;comma&gt;&lt;space&gt;11.850481051772357&lt;amp&gt;cbp=12&lt;comma&gt;20.09&lt;comma&gt;&lt;comma&gt;0&lt;comma&gt;5&lt;amp&gt;layer=c?hl=sv"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="10"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="655.5074194362669 -775.00094173055015"
+#!   BOUNDING_RECT="655.5074194362669 -775.00094173055015 516.97973092778648 71"
+#!   ORDER="500000000001419.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; foto1_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;1&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto1&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto2_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;2&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto2&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto3_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;3&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto3&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto4_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;4&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto4&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto5_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;5&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto5&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto6_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;6&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto6&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto7_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;7&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto7&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto8_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;-Tom-&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;8&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto8&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  googleStreet_ SET_TO &lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;googleStreet&lt;closeparen&gt;&lt;quote&gt;&lt;space&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Streetview&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="Junction"
+#!   VERSION="0"
+#!   POSITION="1346.8804718766128 -583.37421046323732"
+#!   BOUNDING_RECT="1346.8804718766128 -583.37421046323732 61 61"
+#!   ORDER="500000000001426.38"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Junction"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3171.6729346999373 -1128.5740525811329"
+#!   BOUNDING_RECT="3171.6729346999373 -1128.5740525811329 454 71"
+#!   ORDER="500000000001427.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="html_list" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="meta" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; html_list SET_TO   meta SET_TO the&lt;space&gt;list&lt;space&gt;ordinary&lt;space&gt;unordered&lt;space&gt;list&lt;space&gt;of&lt;space&gt;items&lt;comma&gt;&lt;space&gt;each&lt;space&gt;item&lt;space&gt;contains&lt;space&gt;a&lt;space&gt;link&lt;comma&gt;&lt;space&gt;link&lt;space&gt;has&lt;space&gt;a&lt;space&gt;reference&lt;space&gt;and&lt;space&gt;linkable&lt;space&gt;text&lt;space&gt;&lt;openparen&gt;marked&lt;space&gt;as&lt;space&gt;ordinary&lt;space&gt;link&lt;closeparen&gt;.&lt;space&gt;Descriptive&lt;space&gt;text&lt;space&gt;to&lt;space&gt;accompany&lt;space&gt;the&lt;space&gt;actual&lt;space&gt;link.&lt;space&gt;  Descriptive_text_pic_1 SET_TO   Descriptive_text_pic_2 SET_TO   Descriptive_text_pic_3 SET_TO   Descriptive_text_pic_4 SET_TO   Descriptive_text_pic_5 SET_TO   Descriptive_text_pic_6 SET_TO   Descriptive_text_pic_7 SET_TO   Descriptive_text_pic_8 SET_TO "/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="4323.0838054348305 -1036.6725420480007"
+#!   BOUNDING_RECT="4323.0838054348305 -1036.6725420480007 454 71"
+#!   ORDER="500000000001429.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="html_content" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="html_content_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="html_list" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="meta" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; html_content SET_TO &lt;lt&gt;!DOCTYPE&lt;space&gt;html&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;html&lt;space&gt;lang&lt;space&gt;=&lt;space&gt;&lt;quote&gt;en-US&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;head&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;meta&lt;space&gt;charset&lt;space&gt;=&lt;space&gt;&lt;quote&gt;UTF-8&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;title&lt;gt&gt;listLinks.html&lt;lt&gt;&lt;solidus&gt;title&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;head&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;body&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;h1&lt;gt&gt;Some&lt;space&gt;nice&lt;space&gt;programming&lt;space&gt;books&lt;lt&gt;&lt;solidus&gt;h1&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;lt&gt;a&lt;space&gt;href&lt;space&gt;=&lt;space&gt;&lt;quote&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.aharrisbooks.net&lt;solidus&gt;haio&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;HTML&lt;space&gt;&lt;solidus&gt;&lt;space&gt;CSS&lt;space&gt;&lt;solidus&gt;&lt;space&gt;JavaScript&lt;space&gt;ALL&lt;space&gt;in&lt;space&gt;One&lt;space&gt;for&lt;space&gt;Dummies&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;A&lt;space&gt;complete&lt;space&gt;resource&lt;space&gt;to&lt;space&gt;web&lt;space&gt;development&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;lt&gt;a&lt;space&gt;href&lt;space&gt;=&lt;space&gt;&lt;quote&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.aharrisbooks.net&lt;solidus&gt;jad&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;JavaScript&lt;space&gt;&lt;solidus&gt;&lt;space&gt;AJAX&lt;space&gt;for&lt;space&gt;Dummies&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;Using&lt;space&gt;JavaScript&lt;comma&gt;&lt;space&gt;AJAX&lt;comma&gt;&lt;space&gt;and&lt;space&gt;jQuery&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.aharrisbooks.net&lt;solidus&gt;pythonGame&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;Game&lt;space&gt;Programming&lt;space&gt;-&lt;space&gt;the&lt;space&gt;L&lt;space&gt;Line&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;Game&lt;space&gt;development&lt;space&gt;in&lt;space&gt;Python&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.aharrisbooks.net&lt;solidus&gt;h5g&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;HTML5&lt;space&gt;Game&lt;space&gt;Development&lt;space&gt;for&lt;space&gt;Dummies&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;Building&lt;space&gt;web&lt;space&gt;and&lt;space&gt;mobile&lt;space&gt;games&lt;space&gt;in&lt;space&gt;HTML5&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;body&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;&lt;solidus&gt;html&lt;gt&gt;  html_content_test SET_TO &lt;lt&gt;!DOCTYPE&lt;space&gt;html&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;html&lt;space&gt;lang&lt;space&gt;=&lt;space&gt;&lt;quote&gt;en-US&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;head&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;meta&lt;space&gt;charset&lt;space&gt;=&lt;space&gt;&lt;quote&gt;UTF-8&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;title&lt;gt&gt;listLinks.html&lt;lt&gt;&lt;solidus&gt;title&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;head&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;body&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;h1&lt;gt&gt;Some&lt;space&gt;nice&lt;space&gt;culverts&lt;space&gt;pics&lt;lt&gt;&lt;solidus&gt;h1&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lista&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;body&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;&lt;solidus&gt;html&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1563.3773065671817 -493.67423938945251"
+#!   BOUNDING_RECT="1563.3773065671817 -493.67423938945251 454 71"
+#!   ORDER="500000000001434.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; all_pics_missing SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;False&apos;BOOL_OP;AND;COMPOSITE_TEST;1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8;TEST Foto&lt;space&gt;1 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;2 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;3 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;4 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;5 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;6 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;7 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto&lt;space&gt;8 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;True&apos;FME_NUM_CONDITIONS2___&quot;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_6"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="15"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="4323.0838054348305 -772.13683353152305"
+#!   BOUNDING_RECT="4323.0838054348305 -772.13683353152305 454 71"
+#!   ORDER="500000000001436.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="html_list" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="meta" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; lista SET_TO &lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto1_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_1&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto2_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_2&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto3_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_3&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto4_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_4&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto5_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_5&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto6_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_6&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto7_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_7&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto8_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_8&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_7"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="TestFilter"
+#!   VERSION="2"
+#!   POSITION="2217.6807246013636 -329.05227831690081"
+#!   BOUNDING_RECT="2217.6807246013636 -329.05227831690081 454 71"
+#!   ORDER="500000000001438.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;at&gt;Value&lt;openparen&gt;all_pics_missing&lt;closeparen&gt;&lt;space&gt;=&lt;space&gt;True"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;all_pics_missing&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;True&quot;,&lt;at&gt;Value&lt;openparen&gt;all_pics_missing&lt;closeparen&gt;&lt;space&gt;=&lt;space&gt;True"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="3433.7723298874375 -200.07802842259932"
+#!   BOUNDING_RECT="3433.7723298874375 -200.07802842259932 454 71"
+#!   ORDER="500000000001439.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="html_content_test" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="all_pics_missing" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="googleStreet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_copynum" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; html_content_test SET_TO &lt;lt&gt;!DOCTYPE&lt;space&gt;html&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;html&lt;space&gt;lang&lt;space&gt;=&lt;space&gt;&lt;quote&gt;en-US&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;head&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;meta&lt;space&gt;charset&lt;space&gt;=&lt;space&gt;&lt;quote&gt;UTF-8&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;title&lt;gt&gt;listLinks.html&lt;lt&gt;&lt;solidus&gt;title&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;head&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;body&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;h1&lt;gt&gt;Inga&lt;space&gt;bilagor&lt;space&gt;finns&lt;space&gt;till&lt;space&gt;denna&lt;space&gt;trumma&lt;lt&gt;&lt;solidus&gt;h1&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;body&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;&lt;solidus&gt;html&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_8"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-286.16552777947174 1935.8876074028221"
+#!   BOUNDING_RECT="-286.16552777947174 1935.8876074028221 442.02881389666868 71"
+#!   ORDER="500000000001419.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; foto1_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;1&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto1&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto2_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;2&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto2&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto3_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;3&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto3&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto4_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;4&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto4&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto5_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;5&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto5&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto6_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;6&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto6&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto7_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;7&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto7&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  foto8_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;a&lt;space&gt;href=&lt;quote&gt;file:&lt;at&gt;Value&lt;openparen&gt;Foto&lt;space&gt;8&lt;closeparen&gt;&lt;quote&gt;Target=&lt;quote&gt;Blank&lt;quote&gt;&lt;gt&gt;Foto8&lt;lt&gt;&lt;solidus&gt;a&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_9"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1220.7798402615776 1894.6055757122415"
+#!   BOUNDING_RECT="1220.7798402615776 1894.6055757122415 454 71"
+#!   ORDER="500000000001427.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; Descriptive_text_pic_1 SET_TO   Descriptive_text_pic_2 SET_TO   Descriptive_text_pic_3 SET_TO   Descriptive_text_pic_4 SET_TO   Descriptive_text_pic_5 SET_TO   Descriptive_text_pic_6 SET_TO   Descriptive_text_pic_7 SET_TO   Descriptive_text_pic_8 SET_TO "/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_14"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="22"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="2801.3109513890849 2084.2250161120965"
+#!   BOUNDING_RECT="2801.3109513890849 2084.2250161120965 430 71"
+#!   ORDER="500000000001436.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; lista SET_TO &lt;lt&gt;ul&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item1_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item2_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item3_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item4_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item5_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item6_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item7_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;lst_item8_&lt;closeparen&gt;&lt;lf&gt;&lt;lt&gt;&lt;solidus&gt;ul&lt;gt&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_17"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="2201.5232367988233 2084.2250161120965"
+#!   BOUNDING_RECT="2201.5232367988233 2084.2250161120965 454 71"
+#!   ORDER="500000000001445.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="lst_item1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; lst_item1_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto1_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_1&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item2_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto2_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_2&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item3_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto3_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_3&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item4_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto4_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_4&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item5_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto5_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_5&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item6_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto6_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_6&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item7_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto7_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_7&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;  lst_item8_ SET_TO &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto&lt;space&gt;8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_&apos;&lt;lt&gt;li&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;foto8_&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;Descriptive_text_pic_8&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;li&lt;gt&gt;&apos;FME_NUM_CONDITIONS2___&quot;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_19"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="28"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="-880.45372417409408 2229.1195670845068"
+#!   BOUNDING_RECT="-880.45372417409408 2229.1195670845068 454 71"
+#!   ORDER="500000000001451.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="1 Foto&lt;space&gt;1 RENAME_SET_DEFAULT  2 Foto&lt;space&gt;2 RENAME_SET_DEFAULT  3 Foto&lt;space&gt;3 RENAME_SET_DEFAULT  4 Foto&lt;space&gt;4 RENAME_SET_DEFAULT  5 Foto&lt;space&gt;5 RENAME_SET_DEFAULT  6 Foto&lt;space&gt;6 RENAME_SET_DEFAULT  7 Foto&lt;space&gt;7 RENAME_SET_DEFAULT  8 Foto&lt;space&gt;8 RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="29"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1220.7798402615776 2446.6850338784152"
+#!   BOUNDING_RECT="1220.7798402615776 2446.6850338784152 454 71"
+#!   ORDER="500000000001456.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_popup_bildlista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _popup_bildlista SET_TO Inga&lt;space&gt;bilagor&lt;space&gt;finns&lt;space&gt;till&lt;space&gt;denna&lt;space&gt;trumma"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_12"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="30"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="2801.3109513890849 1890.5597923469757"
+#!   BOUNDING_RECT="2801.3109513890849 1890.5597923469757 430 71"
+#!   ORDER="500000000001456.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_popup_bildlista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="lst_item8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Descriptive_text_pic_8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; _popup_bildlista SET_TO &lt;at&gt;Value&lt;openparen&gt;lista&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_13"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="32"
+#!   TYPE="AttributeKeeper"
+#!   VERSION="3"
+#!   POSITION="3402.126443808324 2392.4135845800606"
+#!   BOUNDING_RECT="3402.126443808324 2392.4135845800606 454 71"
+#!   ORDER="500000000001463.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_popup_bildlista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="_popup_bildlista"/>
+#!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="84"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="381.05114881563304 1995.8876074028221"
+#!   BOUNDING_RECT="381.05114881563304 1995.8876074028221 454 71"
+#!   ORDER="500000000001477.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="foto1_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto2_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto3_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto4_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto5_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto6_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto7_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="foto8_" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 3" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 4" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 5" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 6" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 7" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Foto 8" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="COMPOSITE"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST Foto&lt;space&gt;1 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;2 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;3 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;4 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;5 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;6 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;7 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;&#10;TEST Foto&lt;space&gt;8 NOT_ATTRIBUTE_HAS_A_VALUE &quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="89"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="4"
+#!   POSITION="3402.126443808324 1890.5597923469757"
+#!   BOUNDING_RECT="3402.126443808324 1890.5597923469757 454 71"
+#!   ORDER="500000000001479.38"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_popup_bildlista" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="bildlista_pu _pu_bildlista_pu RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="65"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="4054.1207806915954 2468.9275802263446"
+#!   BOUNDING_RECT="4054.1207806915954 2468.9275802263446 637.10000000000002 71"
+#!   ORDER="500000000001482.38"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer_2_Output"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="79"
+#!   TYPE="FeatureWriter"
+#!   VERSION="0"
+#!   POSITION="1345.5511667743122 1427.7409717619157"
+#!   BOUNDING_RECT="1345.5511667743122 1427.7409717619157 844.30915541503236 71"
+#!   ORDER="500000000001978.5"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="SUMMARY"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="trv26026"/>
+#!     <XFORM_PARM PARM_NAME="DATASET_ATTR" PARM_VALUE="_dataset"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE_LIST_ATTR" PARM_VALUE="_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="MSSQL_ADO"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="RUNTIME_MACROS,NAMED_CONNECTION&lt;comma&gt;trv26026&lt;comma&gt;COMMAND_TIMEOUT&lt;comma&gt;30&lt;comma&gt;ADVANCED&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;BULK_INSERT&lt;comma&gt;NO&lt;comma&gt;START_TRANSACTION&lt;comma&gt;0&lt;comma&gt;TRANSACTION_INTERVAL&lt;comma&gt;500&lt;comma&gt;BEGIN_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;comma&gt;&lt;comma&gt;END_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;comma&gt;&lt;comma&gt;COORDINATE_SYSTEM_GRANULARITY&lt;comma&gt;FEATURE,METAFILE,MSSQL_ADO"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="MSSQL_ADO_BEGIN_SQL{0},&quot;OPTIONAL TEXT_EDIT_SQL_CFG_ENCODED MODE,SQL;FORMAT,MSSQL_ADO&quot;,MSSQL_ADO&lt;space&gt;SQL&lt;space&gt;To&lt;space&gt;Run&lt;space&gt;Before&lt;space&gt;Write,MSSQL_ADO_COMMAND_TIMEOUT,&quot;OPTIONAL INTEGER&quot;,MSSQL_ADO&lt;space&gt;Command&lt;space&gt;Timeout&lt;space&gt;&lt;openparen&gt;Seconds&lt;closeparen&gt;,MSSQL_ADO_COORDINATE_SYSTEM_GRANULARITY,&quot;OPTIONAL NO_EDIT TEXT&quot;,MSSQL_ADO&lt;space&gt;,MSSQL_ADO_BULK_INSERT,&quot;OPTIONAL CHOICE YES%NO&quot;,MSSQL_ADO&lt;space&gt;Bulk&lt;space&gt;Insert,MSSQL_ADO_TRANSACTION_INTERVAL,&quot;OPTIONAL TEXT&quot;,MSSQL_ADO&lt;space&gt;Features&lt;space&gt;Per&lt;space&gt;Transaction,MSSQL_ADO_END_SQL{0},&quot;OPTIONAL TEXT_EDIT_SQL_CFG_ENCODED MODE,SQL;FORMAT,MSSQL_ADO&quot;,MSSQL_ADO&lt;space&gt;SQL&lt;space&gt;To&lt;space&gt;Run&lt;space&gt;After&lt;space&gt;Write,MSSQL_ADO_ADVANCED,&quot;OPTIONAL DISCLOSUREGROUP BULK_INSERT%START_TRANSACTION%TRANSACTION_INTERVAL%BEGIN_SQL{0}%END_SQL{0}&quot;,MSSQL_ADO&lt;space&gt;Advanced,MSSQL_ADO_START_TRANSACTION,&quot;OPTIONAL TEXT&quot;,MSSQL_ADO&lt;space&gt;Start&lt;space&gt;Transaction&lt;space&gt;At:,MSSQL_ADO_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,MSSQL_ADO&lt;space&gt;Connection:"/>
+#!     <XFORM_PARM PARM_NAME="MORE_SUMMARY_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_ADVANCED" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_BEGIN_SQL{0}" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_BULK_INSERT" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_COMMAND_TIMEOUT" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_COORDINATE_SYSTEM_GRANULARITY" PARM_VALUE="FEATURE"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_END_SQL{0}" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_NAMED_CONNECTION" PARM_VALUE="trv26026"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_START_TRANSACTION" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_ADO_TRANSACTION_INTERVAL" PARM_VALUE="500"/>
+#!     <XFORM_PARM PARM_NAME="NO_OUTPUT_PORTS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS" PARM_VALUE="&quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="NO_OUTPUT_PORTS"/>
+#!     <XFORM_PARM PARM_NAME="PER_EACH_INPUT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SUMMARY_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="TOTAL_FEATURES_WRITTEN_ATTR" PARM_VALUE="_total_features_written"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_DIRECTIVES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_FEATURE_TYPE_PARAMS" PARM_VALUE="VAGTRUMMA_AGGREGAT:Table1,ftp_feature_type_name,VAGTRUMMA_AGGREGAT,ftp_feature_type_qualifier,GDI_VAGDATA,ftp_writer,MSSQL_ADO,ftp_dynamic_schema,no,ftp_dynamic_feature_type_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_geometry_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_def_name_type,DYN_SCHEMA_PROP_AUTO,ftp_dynamic_schema_sources,&lt;lt&gt;lt&lt;gt&gt;Unused&lt;lt&gt;gt&lt;gt&gt;,ftp_attribute_source,1,ftp_user_attributes,GlobalID&lt;comma&gt;uniqueidentifier&lt;comma&gt;BEDOM_INTERVALL&lt;comma&gt;nvarchar&lt;lt&gt;openparen&lt;gt&gt;100&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;DEFINITION_DATE&lt;comma&gt;datetime2,ftp_user_attribute_values,&lt;comma&gt;&lt;comma&gt;,ftp_format_parameters,fme_configuration_group&lt;comma&gt;&lt;comma&gt;fme_configuration_common_group&lt;comma&gt;&lt;comma&gt;fme_feature_operation&lt;comma&gt;UPDATE&lt;comma&gt;fme_table_handling&lt;comma&gt;USE_EXISTING&lt;comma&gt;fme_selection_group&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;fme_selection_method&lt;comma&gt;BUILDER&lt;comma&gt;fme_match_columns&lt;comma&gt;&lt;lt&gt;lt&lt;gt&gt;Unused&lt;lt&gt;gt&lt;gt&gt;&lt;comma&gt;fme_where_builder_clause&lt;comma&gt;&lt;lt&gt;lt&lt;gt&gt;openbracket&lt;lt&gt;gt&lt;gt&gt;GlobalID&lt;lt&gt;lt&lt;gt&gt;closebracket&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;lt&lt;gt&gt;space&lt;lt&gt;gt&lt;gt&gt;=&lt;lt&gt;lt&lt;gt&gt;space&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;lt&lt;gt&gt;apos&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;lt&lt;gt&gt;at&lt;lt&gt;gt&lt;gt&gt;Value&lt;lt&gt;lt&lt;gt&gt;openparen&lt;lt&gt;gt&lt;gt&gt;GlobalID&lt;lt&gt;lt&lt;gt&gt;closeparen&lt;lt&gt;gt&lt;gt&gt;&lt;lt&gt;lt&lt;gt&gt;apos&lt;lt&gt;gt&lt;gt&gt;&lt;comma&gt;fme_advanced_group&lt;comma&gt;FME_DISCLOSURE_OPEN&lt;comma&gt;mssql_enable_identity_insert&lt;comma&gt;NO"/>
+#!     <XFORM_PARM PARM_NAME="WRITER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WRITER_METAFILE" PARM_VALUE="ATTRIBUTE_CASE,ANY,ATTRIBUTE_INVALID_CHARS,&lt;backslash&gt;&lt;backslash&gt;&lt;openbracket&gt;&lt;closebracket&gt;&lt;quote&gt;,ATTRIBUTE_LENGTH,128,ATTR_TYPE_MAP,bit&lt;comma&gt;fme_boolean&lt;comma&gt;text&lt;comma&gt;fme_buffer&lt;comma&gt;xml&lt;comma&gt;fme_xml&lt;comma&gt;text&lt;comma&gt;fme_json&lt;comma&gt;image&lt;comma&gt;fme_binarybuffer&lt;comma&gt;ntext&lt;comma&gt;fme_buffer&lt;comma&gt;uniqueidentifier&lt;comma&gt;fme_buffer&lt;comma&gt;timestamp&lt;comma&gt;fme_binarybuffer&lt;comma&gt;tinyint&lt;comma&gt;fme_uint8&lt;comma&gt;smallint&lt;comma&gt;fme_int16&lt;comma&gt;smallint&lt;comma&gt;fme_int8&lt;comma&gt;integer&lt;comma&gt;fme_int32&lt;comma&gt;integer&lt;comma&gt;fme_uint16&lt;comma&gt;bigint&lt;comma&gt;fme_int64&lt;comma&gt;bigint&lt;comma&gt;fme_uint32&lt;comma&gt;identity&lt;comma&gt;fme_int32&lt;comma&gt;char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;binary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_binary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;nchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_char&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;datetime2&lt;comma&gt;fme_datetime&lt;comma&gt;datetime2&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_datetime&lt;comma&gt;datetimeoffset&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_datetime&lt;comma&gt;datetime&lt;comma&gt;fme_datetime&lt;comma&gt;smalldatetime&lt;comma&gt;fme_datetime&lt;comma&gt;time&lt;comma&gt;fme_time&lt;comma&gt;time&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_time&lt;comma&gt;date&lt;comma&gt;fme_date&lt;comma&gt;&lt;quote&gt;numeric&lt;openparen&gt;width&lt;comma&gt;decimal&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;fme_decimal&lt;openparen&gt;width&lt;comma&gt;decimal&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;numeric&lt;openparen&gt;20&lt;comma&gt;0&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;fme_uint64&lt;comma&gt;real&lt;comma&gt;fme_real32&lt;comma&gt;float&lt;comma&gt;fme_real64&lt;comma&gt;money&lt;comma&gt;fme_real64&lt;comma&gt;smallmoney&lt;comma&gt;fme_real64&lt;comma&gt;varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;nvarchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varchar&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;varbinary&lt;openparen&gt;width&lt;closeparen&gt;&lt;comma&gt;fme_varbinary&lt;openparen&gt;width&lt;closeparen&gt;,DEST_ILLEGAL_ATTR_LIST,,FEATURE_TYPE_CASE,ANY,FEATURE_TYPE_INVALID_CHARS,&lt;backslash&gt;&lt;backslash&gt;&lt;quote&gt;&lt;openbracket&gt;&lt;closebracket&gt;,FEATURE_TYPE_LENGTH,128,FEATURE_TYPE_LENGTH_INCLUDES_PREFIX,false,FEATURE_TYPE_RESERVED_WORDS,,FORMAT_METAFILE,$(FME_HOME_ENCODED)metafile&lt;backslash&gt;MSSQL_ADO.fmf,FORMAT_NAME,MSSQL_ADO,GEOM_MAP,db_none&lt;comma&gt;fme_no_geom&lt;comma&gt;db_none&lt;comma&gt;fme_point&lt;comma&gt;db_none&lt;comma&gt;fme_line&lt;comma&gt;db_none&lt;comma&gt;fme_polygon&lt;comma&gt;db_none&lt;comma&gt;fme_text&lt;comma&gt;db_none&lt;comma&gt;fme_ellipse&lt;comma&gt;db_none&lt;comma&gt;fme_arc&lt;comma&gt;db_none&lt;comma&gt;fme_rectangle&lt;comma&gt;db_none&lt;comma&gt;fme_rounded_rectangle&lt;comma&gt;db_none&lt;comma&gt;fme_collection&lt;comma&gt;db_none&lt;comma&gt;fme_raster&lt;comma&gt;db_none&lt;comma&gt;fme_surface&lt;comma&gt;db_none&lt;comma&gt;fme_solid&lt;comma&gt;db_none&lt;comma&gt;fme_point_cloud&lt;comma&gt;db_none&lt;comma&gt;fme_feature_table,READER_ATTR_INDEX_TYPES,Indexed&lt;comma&gt;IndexedNotNull&lt;comma&gt;Unique&lt;comma&gt;UniqueClustered&lt;comma&gt;Clustered&lt;comma&gt;ClusteredNotNull&lt;comma&gt;NotNull&lt;comma&gt;PrimaryKey,SOURCE,no,SUPPORTS_FEAT_TYPE_FANOUT,yes,SUPPORTS_MULTI_GEOM,yes,WORKBENCH_CANNED_SCHEMA,,WRITER,MSSQL_ADO,WRITER_ATTR_INDEX_TYPES,Indexed&lt;comma&gt;IndexedNotNull&lt;comma&gt;Unique&lt;comma&gt;UniqueClustered&lt;comma&gt;Clustered&lt;comma&gt;ClusteredNotNull&lt;comma&gt;NotNull&lt;comma&gt;PrimaryKey,WRITER_DEFLINE_PARMS,&lt;quote&gt;GUI&lt;space&gt;NAMEDGROUP&lt;space&gt;fme_configuration_group&lt;space&gt;fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group&lt;space&gt;Table&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;NAMEDGROUP&lt;space&gt;fme_configuration_common_group&lt;space&gt;fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group&lt;space&gt;General&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;ACTIVECHOICE_LOOKUP&lt;space&gt;fme_feature_operation&lt;space&gt;Insert&lt;comma&gt;INSERT&lt;comma&gt;fme_update_geometry&lt;comma&gt;fme_selection_group&lt;comma&gt;mie_pack%Update&lt;comma&gt;UPDATE&lt;comma&gt;++fme_table_handling+USE_EXISTING&lt;comma&gt;++fme_selection_group+FME_DISCLOSURE_OPEN%Delete&lt;comma&gt;DELETE&lt;comma&gt;++fme_table_handling+USE_EXISTING&lt;comma&gt;fme_update_geometry&lt;comma&gt;++fme_selection_group+FME_DISCLOSURE_OPEN&lt;comma&gt;fme_spatial_group&lt;comma&gt;fme_advanced_group&lt;comma&gt;oracle_sequenced_cols%&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;fme_db_operation&lt;lt&gt;closeparen&lt;gt&gt;&lt;comma&gt;MULTIPLE&lt;comma&gt;++fme_table_handling+USE_EXISTING&lt;comma&gt;++fme_selection_group+FME_DISCLOSURE_OPEN&lt;space&gt;Feature&lt;space&gt;Operation&lt;quote&gt;&lt;comma&gt;INSERT&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;ACTIVECHOICE_LOOKUP&lt;space&gt;fme_table_handling&lt;space&gt;Use&lt;lt&gt;space&lt;gt&gt;Existing&lt;comma&gt;USE_EXISTING&lt;comma&gt;fme_table_creation_group%Create&lt;lt&gt;space&lt;gt&gt;If&lt;lt&gt;space&lt;gt&gt;Needed&lt;comma&gt;CREATE_IF_MISSING%Drop&lt;lt&gt;space&lt;gt&gt;and&lt;lt&gt;space&lt;gt&gt;Create&lt;comma&gt;DROP_CREATE%Truncate&lt;lt&gt;space&lt;gt&gt;Existing&lt;comma&gt;TRUNCATE_EXISTING&lt;comma&gt;fme_table_creation_group&lt;space&gt;Table&lt;space&gt;Handling&lt;quote&gt;&lt;comma&gt;CREATE_IF_MISSING&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;DISCLOSUREGROUP&lt;space&gt;fme_selection_group&lt;space&gt;fme_selection_method&lt;space&gt;Row&lt;space&gt;Selection&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;WHOLE_LINE&lt;space&gt;RADIOPARAMETERGROUP&lt;space&gt;fme_selection_method&lt;space&gt;fme_match_columns&lt;comma&gt;MATCH_COLUMNS%fme_where_builder_clause&lt;comma&gt;BUILDER&lt;space&gt;Row&lt;space&gt;Selection&lt;space&gt;Method&lt;quote&gt;&lt;comma&gt;MATCH_COLUMNS&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;WHOLE_LINE&lt;space&gt;ATTRLIST_COMMAS&lt;space&gt;fme_match_columns&lt;space&gt;Match&lt;space&gt;Columns&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;WHOLE_LINE&lt;space&gt;TEXT_EDIT_SQL_CFG_OR_ATTR&lt;space&gt;fme_where_builder_clause&lt;space&gt;MODE&lt;comma&gt;WHERE&lt;space&gt;WHERE&lt;space&gt;Clause&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;DISCLOSUREGROUP&lt;space&gt;fme_advanced_group&lt;space&gt;mssql_enable_identity_insert&lt;space&gt;Advanced&lt;quote&gt;&lt;comma&gt;&lt;comma&gt;&lt;quote&gt;GUI&lt;space&gt;CHOICE&lt;space&gt;mssql_enable_identity_insert&lt;space&gt;NO%YES&lt;space&gt;Insert&lt;space&gt;Into&lt;space&gt;Identity&lt;space&gt;Column&lt;quote&gt;&lt;comma&gt;NO,WRITER_DEF_LINE_TEMPLATE,&lt;opencurly&gt;FME_GEN_GROUP_NAME&lt;closecurly&gt;&lt;comma&gt;mssql_update_key_columns&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;comma&gt;mssql_drop_table&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;comma&gt;mssql_truncate_table&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;comma&gt;mssql_table_writer_mode&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;comma&gt;fme_feature_operation&lt;comma&gt;INSERT&lt;comma&gt;fme_table_handling&lt;comma&gt;CREATE_IF_MISSING&lt;comma&gt;fme_selection_method&lt;comma&gt;MATCH_COLUMNS&lt;comma&gt;fme_match_columns&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;comma&gt;fme_where_builder_clause&lt;comma&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;comma&gt;mssql_enable_identity_insert&lt;comma&gt;NO,WRITER_FORMAT_PARAMETER,NETWORK_AUTHENTICATION&lt;comma&gt;NO&lt;comma&gt;NETWORK_PROXY&lt;comma&gt;NO&lt;comma&gt;DATASET_NAME&lt;comma&gt;Database&lt;comma&gt;FEATURE_TYPE_NAME&lt;comma&gt;Table&lt;comma&gt;FEATURE_TYPE_DEFAULT_NAME&lt;comma&gt;Table1&lt;comma&gt;SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME&lt;comma&gt;YES&lt;comma&gt;PARAMS_TO_NOT_PROPAGATE_ON_INSPECT&lt;comma&gt;&lt;quote&gt;BEGIN_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;space&gt;END_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;quote&gt;&lt;comma&gt;ATTRIBUTE_READING&lt;comma&gt;DEFLINE_ATTRS&lt;comma&gt;ADVANCED_PARMS&lt;comma&gt;&lt;quote&gt;MSSQL_ADO_IN_APPLICATION_INTENT&lt;space&gt;MSSQL_ADO_IN_READ_CACHE_SIZE&lt;space&gt;MSSQL_ADO_IN_BEGIN_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;space&gt;MSSQL_ADO_IN_END_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;space&gt;MSSQL_ADO_OUT_BULK_INSERT&lt;space&gt;MSSQL_ADO_OUT_TRANSACTION_INTERVAL&lt;space&gt;MSSQL_ADO_OUT_BEGIN_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;space&gt;MSSQL_ADO_OUT_END_SQL&lt;opencurly&gt;0&lt;closecurly&gt;&lt;quote&gt;,WRITER_HAS_DEFLINE_ATTRS,yes"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureWriter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="85"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="2354.1857288338979 867.88618173155555"
+#!   BOUNDING_RECT="2354.1857288338979 867.88618173155555 578.00106825772946 71"
+#!   ORDER="500000000001988.5"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureWriter_Summary"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="86"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="2413.539734154383 1272.7777488692809"
+#!   BOUNDING_RECT="2413.539734154383 1272.7777488692809 454 71"
+#!   ORDER="500000000002284.5"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.count" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_feature_type{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_dataset" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_total_features_written" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Logger_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="94"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="-1993.6908229841792 2496.8604116420911"
+#!   BOUNDING_RECT="-1993.6908229841792 2496.8604116420911 430 71"
+#!   ORDER="500000000003654.5"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="95"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-1528.939752039767 2229.1195670845068"
+#!   BOUNDING_RECT="-1528.939752039767 2229.1195670845068 540.00106825772946 71"
+#!   ORDER="500000000003655.5"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="3" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="5" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="6" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="7" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="8" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; 1 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;dBbdZGwL44U  2 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;mcjvw2570iA  3 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;IRZrvaW4-s0  4 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;Qtbx4j4UjRg  5 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;_a78prDb_Q0  6 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;OzxBzCGQrsw  7 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;727qpYiO15g  8 SET_TO https:&lt;solidus&gt;&lt;solidus&gt;unsplash.com&lt;solidus&gt;photos&lt;solidus&gt;MSeS-X3Av2E"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_15"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="96"
+#!   SOURCE_NODE="94"
+#!   TARGET_NODE="95"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 COPY"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="10"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="45"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="46"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="15"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="67"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 &lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;all_pics_missing&lt;lt&gt;closeparen&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;=&lt;lt&gt;space&lt;gt&gt;True"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="97"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="84"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="68"
+#!   SOURCE_NODE="22"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="58"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="61"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="75"
+#!   SOURCE_NODE="29"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="76"
+#!   SOURCE_NODE="30"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="90"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="89"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="87"
+#!   SOURCE_NODE="79"
+#!   TARGET_NODE="85"
+#!   SOURCE_PORT_DESC="fo 0 SUMMARY"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="88"
+#!   SOURCE_NODE="79"
+#!   TARGET_NODE="86"
+#!   SOURCE_PORT_DESC="fo 0 SUMMARY"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="77"
+#!   SOURCE_NODE="84"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="78"
+#!   SOURCE_NODE="89"
+#!   TARGET_NODE="65"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="98"
+#!   SOURCE_NODE="95"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="50"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="72"
+#!   SOURCE_NODE="84"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! <ATTR_LINK
+#!   IDENTIFIER="65581"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="ao 0 1 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#! />
+#! <ATTR_LINK
+#!   IDENTIFIER="65587"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="ao 0 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#! />
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 2or3
+GUI IGNORE DestDataset_HTML_1
+DEFAULT_MACRO DestDataset_HTML $(FME_MF_DIR)test.html
+GUI FILENAME DestDataset_HTML HTML<space>Files(*.html)|*.html Destination Html File:
+INCLUDE [ if {{$(DestDataset_HTML)} == {}} { puts_real {Parameter 'DestDataset_HTML' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} HTML
+MULTI_WRITER_KEYWORD{0} HTML_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "HTML_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER HTML HTML_1
+# =====================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the TextLine files. The user input is stored in
+# a macro, which is then used to define the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_HTML_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER HTML HTML_1
+DEFAULT_MACRO DestDataset_HTML_1 $(DestDataset_HTML)
+GUI FILENAME DestDataset_HTML_1 HTML<space>Files(*.html)|*.html Destination Html File:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO HTML_OUT_OVERWRITE_FILE_HTML_1 YES
+HTML_1_OVERWRITE_FILE "$(HTML_OUT_OVERWRITE_FILE_HTML_1)"
+# =====================================================================
+# Set the type of encoding for the output files
+# =====================================================================
+# Set line termination character
+DEFAULT_MACRO HTML_OUT_END_OF_LINE_HTML_1 System
+HTML_1_END_OF_LINE "$(HTML_OUT_END_OF_LINE_HTML_1)"
+# =====================================================================
+# Set whether to write the last line termination character
+DEFAULT_MACRO HTML_OUT_WRITE_LAST_EOL_HTML_1 YES
+HTML_1_WRITE_LAST_EOL "$(HTML_OUT_WRITE_LAST_EOL_HTML_1)"
+DEFAULT_MACRO HTML_OUT_ENCODING_HTML_1 UTF8
+HTML_1_ENCODING "$(HTML_OUT_ENCODING_HTML_1)"
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO HTML_OUT_WRITE_UTF8_BOM_HTML_1 YES
+HTML_1_WRITE_UTF8_BOM "$(HTML_OUT_WRITE_UTF8_BOM_HTML_1)"
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+DEFAULT_MACRO HTML_OUT_MIME_TYPE_HTML_1 text/html
+HTML_1_MIME_TYPE "$(HTML_OUT_MIME_TYPE_HTML_1)"
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO HTML_OUT_DESTINATION_DATASETTYPE_VALIDATION_HTML_1 Yes
+HTML_1_DESTINATION_DATASETTYPE_VALIDATION "$(HTML_OUT_DESTINATION_DATASETTYPE_VALIDATION_HTML_1)"
+DEFAULT_MACRO HTML_OUT_COORDINATE_SYSTEM_GRANULARITY_HTML_1 FEATURE
+HTML_1_COORDINATE_SYSTEM_GRANULARITY "$(HTML_OUT_COORDINATE_SYSTEM_GRANULARITY_HTML_1)"
+# ============================================================================ 
+HTML_1_GENERATE_FME_BUILD_NUM 19813
+HTML_1_DATASET "$(DestDataset_HTML_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)html_kommando_to_transform_string_to_link.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_HTML_1 HTML_1
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME html_kommando_to_transform_string_to_link
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_XML     NOT_ACTIVATED
+MACRO Creator_CLASSIC NOT_ACTIVATED
+MACRO Creator_2D3D    2D_GEOMETRY
+MACRO Creator_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_2D3D 3D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_2D3D 2D_GEOMETRY};            puts {MACRO Creator_CLASSIC *} } ]
+FACTORY_DEF $(Creator_XML) CreationFactory    FACTORY_NAME Creator_XML_Creator    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>)
+FACTORY_DEF $(Creator_CLASSIC) CreationFactory    FACTORY_NAME Creator_CLASSIC_Creator    $(Creator_2D3D) $(Creator_COORDS)    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * TeeFactory    FACTORY_NAME Creator_Cloner    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES 1    COPY_NUMBER_ATTRIBUTE "_creation_instance"    OUTPUT FEATURE_TYPE Creator_CREATED        fme_feature_type Creator
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Creator CREATED Splitter"   INPUT FEATURE_TYPE Creator_CREATED   OUTPUT FEATURE_TYPE Creator_CREATED_0_GJAgmIF9G6c=   OUTPUT FEATURE_TYPE Creator_CREATED_1_Exx7idfjvCA=
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED_0_GJAgmIF9G6c= Brancher -1 35"   INPUT FEATURE_TYPE Creator_CREATED_0_GJAgmIF9G6c=   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_CREATED_1_Exx7idfjvCA= Brancher -1 36"   INPUT FEATURE_TYPE Creator_CREATED_1_Exx7idfjvCA=   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+Tcl2 proc Creator_3_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO Creator_3_XML     NOT_ACTIVATED
+MACRO Creator_3_CLASSIC NOT_ACTIVATED
+MACRO Creator_3_2D3D    2D_GEOMETRY
+MACRO Creator_3_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO Creator_3_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO Creator_3_2D3D 2D_GEOMETRY};            puts {MACRO Creator_3_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO Creator_3_2D3D 3D_GEOMETRY};            puts {MACRO Creator_3_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {Creator_3: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO Creator_3_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO Creator_3_2D3D 2D_GEOMETRY};            puts {MACRO Creator_3_CLASSIC *} } ]
+FACTORY_DEF $(Creator_3_XML) CreationFactory    FACTORY_NAME Creator_3_XML_Creator    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>)
+FACTORY_DEF $(Creator_3_CLASSIC) CreationFactory    FACTORY_NAME Creator_3_CLASSIC_Creator    $(Creator_3_2D3D) $(Creator_3_COORDS)    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * TeeFactory    FACTORY_NAME Creator_3_Cloner    INPUT FEATURE_TYPE _____CREATED______        @Tcl2(Creator_3_CoordSysRemover)        @CoordSys()    NUMBER_OF_COPIES 1    COPY_NUMBER_ATTRIBUTE "_creation_instance"    OUTPUT FEATURE_TYPE Creator_3_CREATED        fme_feature_type Creator_3
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "Creator_3_CREATED Brancher -1 96"   INPUT FEATURE_TYPE Creator_3_CREATED   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   MAXIMUM_COUNT None   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_15    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_3_CREATED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "1" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>dBbdZGwL44U" }      ATTR_ACTION { "" "2" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>mcjvw2570iA" }      ATTR_ACTION { "" "3" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>IRZrvaW4-s0" }      ATTR_ACTION { "" "4" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>Qtbx4j4UjRg" }      ATTR_ACTION { "" "5" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>_a78prDb_Q0" }      ATTR_ACTION { "" "6" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>OzxBzCGQrsw" }      ATTR_ACTION { "" "7" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>727qpYiO15g" }      ATTR_ACTION { "" "8" "SET_TO" "https:<solidus><solidus>unsplash.com<solidus>photos<solidus>MSeS-X3Av2E" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_15_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeRenamer    INPUT  FEATURE_TYPE AttributeCreator_15_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "1" "Foto<space>1" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "2" "Foto<space>2" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "3" "Foto<space>3" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "4" "Foto<space>4" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "5" "Foto<space>5" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "6" "Foto<space>6" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "7" "Foto<space>7" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "8" "Foto<space>8" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_9    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "foto1_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>1<closeparen><quote>Target=<quote>Blank<quote><gt>Foto1<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto2_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>2<closeparen><quote>Target=<quote>Blank<quote><gt>Foto2<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto3_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>3<closeparen><quote>Target=<quote>Blank<quote><gt>Foto3<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto4_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>4<closeparen><quote>Target=<quote>Blank<quote><gt>Foto4<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto5_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>5<closeparen><quote>Target=<quote>Blank<quote><gt>Foto5<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto6_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>6<closeparen><quote>Target=<quote>Blank<quote><gt>Foto6<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto7_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>7<closeparen><quote>Target=<quote>Blank<quote><gt>Foto7<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto8_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>8<closeparen><quote>Target=<quote>Blank<quote><gt>Foto8<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_9_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TestFactory    FACTORY_NAME Tester    INPUT  FEATURE_TYPE AttributeCreator_9_OUTPUT    TEST Foto<space>1 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>2 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>3 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>4 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>5 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>6 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>7 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED TEST Foto<space>8 NOT_ATTRIBUTE_HAS_A_VALUE "" ENCODED    BOOLEAN_OPERATOR COMPOSITE    COMPOSITE_TEST_EXPR "1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8"    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT PASSED FEATURE_TYPE Tester_PASSED    OUTPUT FAILED FEATURE_TYPE Tester_FAILED
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_14    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Tester_FAILED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "Descriptive_text_pic_1" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_2" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_3" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_4" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_5" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_6" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_7" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_8" "SET_TO" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_14_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_19    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_14_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "lst_item1_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto1_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_1<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item2_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto2_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_2<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item3_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto3_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_3<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item4_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto4_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_4<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item5_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto5_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_5<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item6_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto6_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_6<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item7_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto7_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_7<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "lst_item8_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE''BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>li<gt><at>Value<openparen>foto8_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_8<closeparen><lt><solidus>li<gt>'FME_NUM_CONDITIONS2___" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_19_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_17    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_19_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "lista" "SET_TO" "<lt>ul<gt><lf><space><space><at>Value<openparen>lst_item1_<closeparen><lf><space><space><at>Value<openparen>lst_item2_<closeparen><lf><space><space><at>Value<openparen>lst_item3_<closeparen><lf><space><space><at>Value<openparen>lst_item4_<closeparen><lf><space><space><at>Value<openparen>lst_item5_<closeparen><lf><space><space><at>Value<openparen>lst_item6_<closeparen><lf><space><space><at>Value<openparen>lst_item7_<closeparen><lf><space><space><at>Value<openparen>lst_item8_<closeparen><lf><lt><solidus>ul<gt><lf>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_17_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_13    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_17_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_popup_bildlista" "SET_TO" "<at>Value<openparen>lista<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_13_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_12    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Tester_PASSED    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "_popup_bildlista" "SET_TO" "Inga<space>bilagor<space>finns<space>till<space>denna<space>trumma" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_12_OUTPUT
+# -------------------------------------------------------------------------
+INCLUDE [    set macroLine "MACRO AttributeKeeper_c716f5a8_6350_41a7_aedc_58ab95315dda1_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME AttributeKeeper    INPUT  FEATURE_TYPE AttributeCreator_12_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_13_OUTPUT    OUTPUT { FEATURE_TYPE AttributeKeeper_OUTPUT        @KeepAttributes(fme_encoded,_popup_bildlista,fme_pcre_match,"^fme_$(AttributeKeeper_c716f5a8_6350_41a7_aedc_58ab95315dda1_LIST_EXP)")         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeRenamer_2    INPUT  FEATURE_TYPE AttributeKeeper_OUTPUT 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION { "bildlista_pu" "_pu_bildlista_pu" "RENAME_SET_DEFAULT" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeRenamer_2_OUTPUT
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {AttributeRenamer_2_Output} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME AttributeRenamer_2_Output_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeRenamer_2_OUTPUT    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { AttributeRenamer_2_Output }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME AttributeRenamer_2_Output_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA _popup_bildlista,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME Cloner_Cloner    INPUT  FEATURE_TYPE Creator_CREATED_1_Exx7idfjvCA=    NUMBER_OF_COPIES "1"    COPY_NUMBER_ATTRIBUTE _copynum    REJECT_INVALID YES    OUTPUT COPY Cloner_COPY
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Cloner_COPY    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "Foto<space>1" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>2" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>3" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>4" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>5" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>6" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>7" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>8" "SET_TO" "" }      ATTR_ACTION { "" "googleStreet" "SET_TO" "http:<solidus><solidus>maps.google.com<solidus>?cbll=57.90253692821303<comma><space>11.850481051772357<amp>cbp=12<comma>20.09<comma><comma>0<comma>5<amp>layer=c?hl=sv" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "foto1_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>1<closeparen><quote>Target=<quote>Blank<quote><gt>Foto1<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto2_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>2<closeparen><quote>Target=<quote>Blank<quote><gt>Foto2<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto3_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>3<closeparen><quote>Target=<quote>Blank<quote><gt>Foto3<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto4_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>4<closeparen><quote>Target=<quote>Blank<quote><gt>Foto4<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto5_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>5<closeparen><quote>Target=<quote>Blank<quote><gt>Foto5<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto6_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>6<closeparen><quote>Target=<quote>Blank<quote><gt>Foto6<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto7_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>7<closeparen><quote>Target=<quote>Blank<quote><gt>Foto7<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto8_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>8<closeparen><quote>Target=<quote>Blank<quote><gt>Foto8<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "googleStreet_" "SET_TO" "<lt>a<space>href=<quote><at>Value<openparen>googleStreet<closeparen><quote><space>Target=<quote>Blank<quote><gt>Streetview<lt><solidus>a<gt>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Creator_CREATED_0_GJAgmIF9G6c=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "Foto<space>1" "SET_TO" "<backslash><backslash>trafikverket.local<backslash>Appl<backslash>VagdataFilarea<backslash>Foton_vagtrumma<backslash>O_614<backslash>8775DF2D-B20F-4715-9BA4-61AC69AC036F.jpg" }      ATTR_ACTION { "" "Foto<space>2" "SET_TO" "<backslash><backslash>trafikverket.local<backslash>Appl<backslash>VagdataFilarea<backslash>Foton_vagtrumma<backslash>O_614<backslash>ED3859BE-57C0-40FC-86CA-1C75D5B6CD62.jpg" }      ATTR_ACTION { "" "Foto<space>3" "SET_TO" "<backslash><backslash>trafikverket.local<backslash>Appl<backslash>VagdataFilarea<backslash>Foton_vagtrumma<backslash>O_614<backslash>3E132654-76B9-4CA8-A6DE-301DD08E3A1D.jpg" }      ATTR_ACTION { "" "Foto<space>4" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>5" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>6" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>7" "SET_TO" "" }      ATTR_ACTION { "" "Foto<space>8" "SET_TO" "" }      ATTR_ACTION { "" "googleStreet" "SET_TO" "http:<solidus><solidus>maps.google.com<solidus>?cbll=57.90253692821303<comma><space>11.850481051772357<amp>cbp=12<comma>20.09<comma><comma>0<comma>5<amp>layer=c?hl=sv" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_11    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "foto1_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>1 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>1<closeparen><quote>Target=<quote>Blank<quote><gt>Foto1<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto2_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>2 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>2<closeparen><quote>Target=<quote>Blank<quote><gt>Foto2<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto3_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>3 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>3<closeparen><quote>Target=<quote>Blank<quote><gt>Foto3<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto4_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>4 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>4<closeparen><quote>Target=<quote>Blank<quote><gt>Foto4<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto5_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>5 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>5<closeparen><quote>Target=<quote>Blank<quote><gt>Foto5<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto6_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>6 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>6<closeparen><quote>Target=<quote>Blank<quote><gt>Foto6<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto7_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>7 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>7<closeparen><quote>Target=<quote>Blank<quote><gt>Foto7<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "foto8_" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'-Tom-'BOOL_OP;OR;COMPOSITE_TEST;1;TEST Foto<space>8 ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'<lt>a<space>href=<quote>file:<at>Value<openparen>Foto<space>8<closeparen><quote>Target=<quote>Blank<quote><gt>Foto8<lt><solidus>a<gt>'FME_NUM_CONDITIONS2___" }      ATTR_ACTION { "" "googleStreet_" "SET_TO" "<lt>a<space>href=<quote><at>Value<openparen>googleStreet<closeparen><quote><space>Target=<quote>Blank<quote><gt>Streetview<lt><solidus>a<gt>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_11_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME Junction    INPUT  FEATURE_TYPE AttributeCreator_11_OUTPUT    INPUT  FEATURE_TYPE AttributeCreator_3_OUTPUT    OUTPUT FEATURE_TYPE Junction_Output
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Junction_Output    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "all_pics_missing" "SET_TO" "FME_CONDITIONAL:DEFAULT_VALUE'False'BOOL_OP;AND;COMPOSITE_TEST;1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8;TEST Foto<space>1 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>2 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>3 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>4 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>5 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>6 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>7 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_;TEST Foto<space>8 NOT_ATTRIBUTE_HAS_A_VALUE _FME_BLANK_STRING_'True'FME_NUM_CONDITIONS2___" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter    INPUT  FEATURE_TYPE AttributeCreator_6_OUTPUT    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_1 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>all_pics_missing<closeparen>,TestFilter) = True ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_<at>Value<openparen>all_pics_missing<closeparen><space>=<space>True OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 OUTPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_4    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "html_list" "SET_TO" "" }      ATTR_ACTION { "" "meta" "SET_TO" "the<space>list<space>ordinary<space>unordered<space>list<space>of<space>items<comma><space>each<space>item<space>contains<space>a<space>link<comma><space>link<space>has<space>a<space>reference<space>and<space>linkable<space>text<space><openparen>marked<space>as<space>ordinary<space>link<closeparen>.<space>Descriptive<space>text<space>to<space>accompany<space>the<space>actual<space>link.<space>" }      ATTR_ACTION { "" "Descriptive_text_pic_1" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_2" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_3" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_4" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_5" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_6" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_7" "SET_TO" "" }      ATTR_ACTION { "" "Descriptive_text_pic_8" "SET_TO" "" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_7    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_4_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "lista" "SET_TO" "<lt>li<gt><at>Value<openparen>foto1_<closeparen><lf><space><space><space><at>Value<openparen>Descriptive_text_pic_1<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto2_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_2<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto3_<closeparen><lf><space><space><space><at>Value<openparen>Descriptive_text_pic_3<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto4_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_4<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto5_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_5<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto6_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_6<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto7_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_7<closeparen><lf><space><space><lt>li<gt><at>Value<openparen>foto8_<closeparen><lf><space><space><at>Value<openparen>Descriptive_text_pic_8<closeparen><lf><space><space><lt><solidus>li<gt>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_5    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeCreator_7_OUTPUT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "html_content" "SET_TO" "<lt>!DOCTYPE<space>html<gt><lf><lt>html<space>lang<space>=<space><quote>en-US<quote><gt><lf><space><lt>head<gt><lf><space><lt>meta<space>charset<space>=<space><quote>UTF-8<quote><gt><lf><space><lt>title<gt>listLinks.html<lt><solidus>title<gt><lf><space><lt><solidus>head<gt><lf><space><lt>body<gt><lf><space><lt>h1<gt>Some<space>nice<space>programming<space>books<lt><solidus>h1<gt><lf><space><lt>ul<gt><lf><space><space><lt>li<gt><lt>a<space>href<space>=<space><quote>http:<solidus><solidus>www.aharrisbooks.net<solidus>haio<quote><gt><lf><space><space><space>HTML<space><solidus><space>CSS<space><solidus><space>JavaScript<space>ALL<space>in<space>One<space>for<space>Dummies<lt><solidus>a<gt><lf><space><space><space>A<space>complete<space>resource<space>to<space>web<space>development<lt><solidus>li<gt><lf><space><space><lt>li<gt><lt>a<space>href<space>=<space><quote>http:<solidus><solidus>www.aharrisbooks.net<solidus>jad<quote><gt><lf><space><space><space>JavaScript<space><solidus><space>AJAX<space>for<space>Dummies<lt><solidus>a<gt><lf><space><space><space>Using<space>JavaScript<comma><space>AJAX<comma><space>and<space>jQuery<lt><solidus>li<gt><lf><space><space><lt>li<gt><lt>a<space>href=<quote>http:<solidus><solidus>www.aharrisbooks.net<solidus>pythonGame<quote><gt><lf><space><space><space>Game<space>Programming<space>-<space>the<space>L<space>Line<lt><solidus>a<gt><lf><space><space><space>Game<space>development<space>in<space>Python<lt><solidus>li<gt><lf><space><space><lt>li<gt><lt>a<space>href=<quote>http:<solidus><solidus>www.aharrisbooks.net<solidus>h5g<quote><gt><lf><space><space><space>HTML5<space>Game<space>Development<space>for<space>Dummies<lt><solidus>a<gt><lf><space><space><space>Building<space>web<space>and<space>mobile<space>games<space>in<space>HTML5<lt><solidus>li<gt><lf><space><lt><solidus>ul<gt><lf><space><lt><solidus>body<gt><lf><lt><solidus>html<gt>" }      ATTR_ACTION { "" "html_content_test" "SET_TO" "<lt>!DOCTYPE<space>html<gt><lf><lt>html<space>lang<space>=<space><quote>en-US<quote><gt><lf><space><lt>head<gt><lf><space><lt>meta<space>charset<space>=<space><quote>UTF-8<quote><gt><lf><space><lt>title<gt>listLinks.html<lt><solidus>title<gt><lf><space><lt><solidus>head<gt><lf><space><lt>body<gt><lf><space><lt>h1<gt>Some<space>nice<space>culverts<space>pics<lt><solidus>h1<gt><lf><space><lt>ul<gt><lf><space><space><at>Value<openparen>lista<closeparen><lf><space><lt><solidus>ul<gt><lf><space><lt><solidus>body<gt><lf><lt><solidus>html<gt>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_8    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE TestFilter_<at>Value<openparen>all_pics_missing<closeparen><space>=<space>True    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "html_content_test" "SET_TO" "<lt>!DOCTYPE<space>html<gt><lf><lt>html<space>lang<space>=<space><quote>en-US<quote><gt><lf><space><lt>head<gt><lf><space><lt>meta<space>charset<space>=<space><quote>UTF-8<quote><gt><lf><space><lt>title<gt>listLinks.html<lt><solidus>title<gt><lf><space><lt><solidus>head<gt><lf><space><lt>body<gt><lf><space><lt>h1<gt>Inga<space>bilagor<space>finns<space>till<space>denna<space>trumma<lt><solidus>h1<gt><lf><space><lt><solidus>body<gt><lf><lt><solidus>html<gt>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_5_OUTPUT TO HTML __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>html_content<comma>html_content_test<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>HTML<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_8_OUTPUT TO HTML __GO_TO_FINAL_OUTPUT_ROUTER__ <at>CopyAttributes<openparen>ENCODED<comma>html_content<comma>html_content_test<closeparen>,multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>HTML<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
