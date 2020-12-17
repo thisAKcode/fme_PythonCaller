@@ -58,10 +58,6 @@ def processFeature(feature):
 import fme
 import fmeobjects
 
-# Template Function interface:
-# When using this function, make sure its name is set as the value of
-# the 'Class or Function to Process Features' transformer parameter
-
 def processFeature(feature):
     
     guid = feature.getAttribute('GlobalID')
