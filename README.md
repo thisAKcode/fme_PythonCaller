@@ -265,3 +265,62 @@ def processFeature(feature):
     foo_raw = fill(var2, width= STRING_WIDTH)
     feature.setAttribute('KOMMENT1', foo_raw)
 ``` 
+# compute iqr 
+
+``` 
+import fme
+import fmeobjects
+import numpy as np
+
+# Template Function interface:
+# When using this function, make sure its name is set as the value of
+# the 'Class or Function to Process Features' transformer parameter
+
+work_attribute = 'SCI300'
+            
+class FeatureProcessor(object):
+    def __init__(self):
+        pass
+
+    def input(self,feature):
+        
+        range_n_numerical = feature.getAttribute('range_n_numerical')
+        list_of_tuples = [(i.split(',')[0], i.split(',')[1]) for i in range_n_numerical.split(';')]
+        
+        range_list = [range(int(element[0]), int(element[1])) for element in list_of_tuples]
+        
+        buckit1, buckit2, buckit3, buckit4 = list_of_tuples
+        
+        buckit1_0 = int(buckit1[0])
+        buckit1_1 = int(buckit1[1])
+        
+        buckit2_0 = int(buckit2[0])
+        buckit2_1 = int(buckit2[1])
+        
+        buckit3_0 = int(buckit3[0])
+        buckit3_1 = int(buckit3[1])
+        
+        buckit4_0 = int(buckit4[0])
+        buckit4_1 = int(buckit4[1])
+
+        
+        actual = feature.getAttribute(f'{work_attribute}')
+        
+        
+        if buckit1_0 <= int(float(actual)) < buckit1_1:
+            range_n = f'{buckit1_0}_{buckit1_1}'
+        elif buckit2_0 <= int(float(actual)) < buckit2_1:
+            range_n = f'{buckit2_0}_{buckit2_1}'
+        elif buckit3_0 <= int(float(actual)) < buckit3_1:
+            range_n = f'{buckit3_0}_{buckit3_1}'
+        elif buckit4_0 <= int(float(actual)) <= buckit4_1:
+            range_n = f'{buckit4_0}_{buckit4_1}'
+        else:
+            range_n = 'no idea'
+        
+       
+        feature.setAttribute('range_n', range_n)
+        self.pyoutput(feature)
+    def close(self):
+        pass
+``` 
