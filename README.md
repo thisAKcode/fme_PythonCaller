@@ -52,3 +52,27 @@ def processFeature(feature):
         if OVERLAP:
             feature.setAttribute("CHANGE_BI_OPERATION", 'change')
 ``` 
+
+## 3. zip two fme lists
+```
+import fme
+import fmeobjects
+
+# Template Function interface:
+# When using this function, make sure its name is set as the value of
+# the 'Class or Function to Process Features' transformer parameter
+
+def processFeature(feature):
+    
+    guid = feature.getAttribute('GlobalID')
+    attrnamn = [i for i in feature.getAttribute('list{}.attributeName')]
+    orig = [i for i in feature.getAttribute('list{}.originalValue')]
+    revised = [i for i in feature.getAttribute('list{}.revisedValue')]
+    ziped = (attrnamn, orig, revised)
+    #print(ziped)
+    subzip = zip(ziped[0],ziped[1],ziped[2])
+    subzip_lst = [', '.join(i) for i in subzip]
+    print('\n'.join(subzip_lst))
+    #changes = ','.join(subzip_lst)
+    #print(changes)
+``` 
