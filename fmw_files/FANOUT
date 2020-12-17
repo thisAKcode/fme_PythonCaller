@@ -1,0 +1,1654 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME2019\fme.exe" M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\FANOUT\FANOUT.fmw
+#              --SourceDataset_CSV2 "M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\FANOUT\do_enhet_distrikt.csv"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="4800.64 1720.8"
+#!   DOC_TOP_LEFT="-1329.82 -996.763"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="19813"
+#!   FME_DOCUMENT_GUID="4242ce7a-25b9-45bd-b972-fc0e682e951b"
+#!   FME_DOCUMENT_PRIORGUID="721dcabe-dd1c-4c08-b99d-4b3fe56579c8,c9d82f52-464a-453e-8bb3-170ec937f96d,a66dd03b-6948-4bc4-aa7f-5c028c55de1a,c5b0973d-355e-4b46-8829-d0c080273e3b,40cae955-89db-45e0-8995-c9d46fbed550,714114e1-eece-43b4-9897-053a0bcd917e,0f51064a-beec-48ee-8dc3-7d2258f288e6,337f496a-0f3a-49ad-94f6-77ab6859fd13,8112dd31-bbf4-456a-832d-4b60bde4067c"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2019.2.1.0 (20191202 - Build 19813 - WIN64)"
+#!   LAST_SAVE_DATE="2020-08-28T08:57:05"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1854.73 807.638"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="77"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(SourceDataset_CSV2)"
+#!   KEYWORD="CSV2_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_total_number_of_columns uint32 fme_color string multi_reader_full_id string csv_number_of_fields uint32 fme_secondary_axis string fme_fill_color string fme_type string csv_type string fme_geometry string multi_reader_keyword string fme_dataset string fme_start_angle string csv_line_number uint64 csv_skipped_line string multi_reader_type string fme_text_size string multi_reader_id string fme_sweep_angle string fme_text_string string fme_basename string fme_rotation string fme_feature_type string fme_primary_axis string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="19813"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="XLSXW"
+#!   DATASET="$(destination_kapslad_fall)"
+#!   KEYWORD="XLSXW_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_drop_sheet No xlsx_trunc_sheet No xlsx_sheet_order &quot;&quot; xlsx_freeze_end_row &quot;&quot; xlsx_names_are_positions No xlsx_field_names_out Yes xlsx_start_col &quot;&quot; xlsx_start_row &quot;&quot; xlsx_offset_col &quot;&quot; xlsx_offset_row &quot;&quot; xlsx_raster_type PNG xlsx_table_writer_mode Insert xlsx_row_id_column &quot;&quot; xlsx_protect_sheet &quot;NO&quot; xlsx_protect_sheet_level &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_password &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_permissions &quot;&lt;Unused&gt;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_color string(50) fme_db_operation string(width,xlsx_col_props) fme_secondary_axis number(width,xlsx_col_props) fme_fill_color string(50) fme_type string(50) fme_geometry string(50) xlsx_col_id number(width,xlsx_col_props) fme_dataset string(50) xlsx_row_formatting string(width,xlsx_col_props) xlsx_raster_scale_factor number(width,xlsx_col_props) fme_start_angle number(width,xlsx_col_props) xlsx_raster_height number(width,xlsx_col_props) xlsx_raster_width number(width,xlsx_col_props) fme_text_size number(width,xlsx_col_props) fme_sweep_angle number(width,xlsx_col_props) fme_text_string string(50) fme_basename string(50) fme_feature_type string(50) fme_rotation number(width,xlsx_col_props) fme_primary_axis number(width,xlsx_col_props) xlsx_row_id number(width,xlsx_col_props)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_layer_group xlsx_table_writer_mode%xlsx_field_names_out%xlsx_names_are_positions%xlsx_row_id_column%xlsx_truncate_group%xlsx_table_group%xlsx_rowcolumn_group%xlsx_protect_sheet%xlsx_advanced_group Sheet Settings&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_truncate_group xlsx_row_id%xlsx_drop_sheet%xlsx_trunc_sheet Drop/Truncate&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_rowcolumn_group xlsx_start_col%xlsx_start_row%xlsx_offset_col%xlsx_offset_row Start Position&quot; &quot;&quot; &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_protect_sheet xlsx_protect_sheet_password%xlsx_protect_sheet_level%xlsx_protect_sheet_permissions Protect Sheet&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_advanced_group xlsx_sheet_order%xlsx_freeze_end_row%xlsx_raster_type Advanced&quot; &quot;&quot; &quot;GUI CHOICE xlsx_drop_sheet Yes%No Drop Existing Sheet/Named Range:&quot; No &quot;GUI CHOICE xlsx_trunc_sheet Yes%No Truncate Existing Sheet/Named Range:&quot; No &quot;GUI OPTIONAL RANGE_SLIDER xlsx_sheet_order 1%MAX Sheet Order (1 - n):&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_freeze_end_row 1%MAX Freeze First Row(s) (1 - n):&quot; &quot;&quot; &quot;GUI CHOICE xlsx_field_names_out Yes%No Output Field Names:&quot; Yes &quot;GUI CHOICE xlsx_names_are_positions Yes%No Use Attribute Names As Column Positions:&quot; No &quot;GUI OPTIONAL TEXT xlsx_start_col Named Range Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_start_row Named Range Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_offset_col Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_offset_row Start Row:&quot; &quot;&quot; &quot;GUI CHOICE xlsx_raster_type BMP%JPEG%PNG Raster Format:&quot; PNG &quot;GUI OPTIONAL PASSWORD_ENCODED xlsx_protect_sheet_password Password:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE_LOOKUP xlsx_protect_sheet_level Select&lt;space&gt;Only&lt;space&gt;Permissions,PROT_DEFAULT,xlsx_protect_sheet_permissions%View&lt;space&gt;Only&lt;space&gt;Permissions,PROT_ALL,xlsx_protect_sheet_permissions%Specific&lt;space&gt;Permissions Protection Level:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_LISTBOX xlsx_protect_sheet_permissions Select&lt;space&gt;locked&lt;space&gt;cells,PROT_SEL_LOCKED_CELLS%Select&lt;space&gt;unlocked&lt;space&gt;cells,PROT_SEL_UNLOCKED_CELLS%Format&lt;space&gt;cells,PROT_FORMAT_CELLS%Format&lt;space&gt;columns,PROT_FORMAT_COLUMNS%Format&lt;space&gt;rows,PROT_FORMAT_ROWS%Insert&lt;space&gt;columns,PROT_INSERT_COLUMNS%Insert&lt;space&gt;rows,PROT_INSERT_ROWS%Add&lt;space&gt;hyperlinks&lt;space&gt;to&lt;space&gt;unlocked&lt;space&gt;cells,PROT_INSERT_HYPERLINKS%Delete&lt;space&gt;unlocked&lt;space&gt;columns,PROT_DELETE_COLUMNS%Delete&lt;space&gt;unlocked&lt;space&gt;rows,PROT_DELETE_ROWS%Sort&lt;space&gt;unlocked&lt;space&gt;cells/rows/columns\,PROT_SORT%Use&lt;space&gt;Autofilter&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_AUTOFILTER%Use&lt;space&gt;PivotTable&lt;space&gt;&amp;&lt;space&gt;PivotChart&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_PIVOTTABLES%Edit&lt;space&gt;unlocked&lt;space&gt;objects,PROT_OBJECTS%Edit&lt;space&gt;unprotected&lt;space&gt;scenarios,PROT_SCENARIOS Specific Permissions:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE xlsx_table_writer_mode Insert,+xlsx_row_id_column+%Update,+xlsx_row_id_column+xlsx_row_id%Delete,+xlsx_row_id_column+xlsx_row_id Writer Mode:&quot; Insert &quot;GUI OPTIONAL ATTR xlsx_row_id_column ALLOW_NEW Row Number Attribute:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="\\&quot;*{}$"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="18578"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;at&gt;Value&lt;openparen&gt;fanout&lt;closeparen&gt;"
+#!   FANOUT_GROUP="YES"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="auto"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_READER"
+#!   VALUE="XLSXR"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Sheet1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="USER_ATTRIBUTES_COLUMNS"
+#!   VALUE="Width,Cell Width%Precision,Formatting"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Microsoft Excel file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="XLSXW"
+#!   DATASET="$(destination_enkel_fall)"
+#!   KEYWORD="XLSXW_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_drop_sheet No xlsx_trunc_sheet No xlsx_sheet_order &quot;&quot; xlsx_freeze_end_row &quot;&quot; xlsx_names_are_positions No xlsx_field_names_out Yes xlsx_start_col &quot;&quot; xlsx_start_row &quot;&quot; xlsx_offset_col &quot;&quot; xlsx_offset_row &quot;&quot; xlsx_raster_type PNG xlsx_table_writer_mode Insert xlsx_row_id_column &quot;&quot; xlsx_protect_sheet &quot;NO&quot; xlsx_protect_sheet_level &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_password &quot;&lt;Unused&gt;&quot; xlsx_protect_sheet_permissions &quot;&lt;Unused&gt;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_color string(50) fme_db_operation string(width,xlsx_col_props) fme_secondary_axis number(width,xlsx_col_props) fme_fill_color string(50) fme_type string(50) fme_geometry string(50) xlsx_col_id number(width,xlsx_col_props) fme_dataset string(50) xlsx_row_formatting string(width,xlsx_col_props) xlsx_raster_scale_factor number(width,xlsx_col_props) fme_start_angle number(width,xlsx_col_props) xlsx_raster_height number(width,xlsx_col_props) xlsx_raster_width number(width,xlsx_col_props) fme_text_size number(width,xlsx_col_props) fme_sweep_angle number(width,xlsx_col_props) fme_text_string string(50) fme_basename string(50) fme_feature_type string(50) fme_rotation number(width,xlsx_col_props) fme_primary_axis number(width,xlsx_col_props) xlsx_row_id number(width,xlsx_col_props)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_layer_group xlsx_table_writer_mode%xlsx_field_names_out%xlsx_names_are_positions%xlsx_row_id_column%xlsx_truncate_group%xlsx_table_group%xlsx_rowcolumn_group%xlsx_protect_sheet%xlsx_advanced_group Sheet Settings&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_truncate_group xlsx_row_id%xlsx_drop_sheet%xlsx_trunc_sheet Drop/Truncate&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_rowcolumn_group xlsx_start_col%xlsx_start_row%xlsx_offset_col%xlsx_offset_row Start Position&quot; &quot;&quot; &quot;GUI ACTIVEDISCLOSUREGROUP xlsx_protect_sheet xlsx_protect_sheet_password%xlsx_protect_sheet_level%xlsx_protect_sheet_permissions Protect Sheet&quot; NO &quot;GUI OPTIONAL DISCLOSUREGROUP xlsx_advanced_group xlsx_sheet_order%xlsx_freeze_end_row%xlsx_raster_type Advanced&quot; &quot;&quot; &quot;GUI CHOICE xlsx_drop_sheet Yes%No Drop Existing Sheet/Named Range:&quot; No &quot;GUI CHOICE xlsx_trunc_sheet Yes%No Truncate Existing Sheet/Named Range:&quot; No &quot;GUI OPTIONAL RANGE_SLIDER xlsx_sheet_order 1%MAX Sheet Order (1 - n):&quot; &quot;&quot; &quot;GUI OPTIONAL RANGE_SLIDER xlsx_freeze_end_row 1%MAX Freeze First Row(s) (1 - n):&quot; &quot;&quot; &quot;GUI CHOICE xlsx_field_names_out Yes%No Output Field Names:&quot; Yes &quot;GUI CHOICE xlsx_names_are_positions Yes%No Use Attribute Names As Column Positions:&quot; No &quot;GUI OPTIONAL TEXT xlsx_start_col Named Range Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_start_row Named Range Start Row:&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT xlsx_offset_col Start Column:&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER xlsx_offset_row Start Row:&quot; &quot;&quot; &quot;GUI CHOICE xlsx_raster_type BMP%JPEG%PNG Raster Format:&quot; PNG &quot;GUI OPTIONAL PASSWORD_ENCODED xlsx_protect_sheet_password Password:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE_LOOKUP xlsx_protect_sheet_level Select&lt;space&gt;Only&lt;space&gt;Permissions,PROT_DEFAULT,xlsx_protect_sheet_permissions%View&lt;space&gt;Only&lt;space&gt;Permissions,PROT_ALL,xlsx_protect_sheet_permissions%Specific&lt;space&gt;Permissions Protection Level:&quot; &lt;Unused&gt; &quot;GUI OPTIONAL LOOKUP_LISTBOX xlsx_protect_sheet_permissions Select&lt;space&gt;locked&lt;space&gt;cells,PROT_SEL_LOCKED_CELLS%Select&lt;space&gt;unlocked&lt;space&gt;cells,PROT_SEL_UNLOCKED_CELLS%Format&lt;space&gt;cells,PROT_FORMAT_CELLS%Format&lt;space&gt;columns,PROT_FORMAT_COLUMNS%Format&lt;space&gt;rows,PROT_FORMAT_ROWS%Insert&lt;space&gt;columns,PROT_INSERT_COLUMNS%Insert&lt;space&gt;rows,PROT_INSERT_ROWS%Add&lt;space&gt;hyperlinks&lt;space&gt;to&lt;space&gt;unlocked&lt;space&gt;cells,PROT_INSERT_HYPERLINKS%Delete&lt;space&gt;unlocked&lt;space&gt;columns,PROT_DELETE_COLUMNS%Delete&lt;space&gt;unlocked&lt;space&gt;rows,PROT_DELETE_ROWS%Sort&lt;space&gt;unlocked&lt;space&gt;cells/rows/columns\,PROT_SORT%Use&lt;space&gt;Autofilter&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_AUTOFILTER%Use&lt;space&gt;PivotTable&lt;space&gt;&amp;&lt;space&gt;PivotChart&lt;space&gt;on&lt;space&gt;unlocked&lt;space&gt;cells,PROT_PIVOTTABLES%Edit&lt;space&gt;unlocked&lt;space&gt;objects,PROT_OBJECTS%Edit&lt;space&gt;unprotected&lt;space&gt;scenarios,PROT_SCENARIOS Specific Permissions:&quot; &lt;Unused&gt; &quot;GUI ACTIVECHOICE xlsx_table_writer_mode Insert,+xlsx_row_id_column+%Update,+xlsx_row_id_column+xlsx_row_id%Delete,+xlsx_row_id_column+xlsx_row_id Writer Mode:&quot; Insert &quot;GUI OPTIONAL ATTR xlsx_row_id_column ALLOW_NEW Row Number Attribute:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="\\&quot;*{}$"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="19813"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;at&gt;Value&lt;openparen&gt;fanout&lt;closeparen&gt;"
+#!   FANOUT_GROUP="YES"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="auto"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_READER"
+#!   VALUE="XLSXR"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Sheet1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="USER_ATTRIBUTES_COLUMNS"
+#!   VALUE="Width,Cell Width%Precision,Formatting"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Microsoft Excel file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string(width,xlsx_col_props)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="auto(width,xlsx_col_props)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime(width,xlsx_col_props)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time(width,xlsx_col_props)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date(width,xlsx_col_props)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,xlsx_col_props)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean(width,xlsx_col_props)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXW"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_map"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="XLSXW"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="kapslad"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="2860.7103565073016 -542.2132143399358"
+#!   BOUNDING_RECT="2860.7103565073016 -542.2132143399358 430 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="XLSXW_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fanout" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="string(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Distrikt" ATTR_TYPE="string(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Enhet" ATTR_TYPE="string(10,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DO_namn" ATTR_TYPE="string(50,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CSV"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="17"
+#!   FEAT_GEOMTYPE="csv_none csv_point"
+#!   POSITION="-1329.8215775231342 90.910000009091078"
+#!   BOUNDING_RECT="-1329.8215775231342 90.910000009091078 578.90289292503314 71"
+#!   ORDER="500000000000010"
+#!   COLLAPSED="true"
+#!   KEYWORD="CSV2_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Distrikt" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Enhet" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DO_namn" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="enkelt_fall"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="30"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="2917.8799993725615 310.73371077787743"
+#!   BOUNDING_RECT="2917.8799993725615 310.73371077787743 430 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="XLSXW_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fanout" ATTR_TYPE="auto(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="string(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Distrikt" ATTR_TYPE="string(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Enhet" ATTR_TYPE="string(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DO_namn" ATTR_TYPE="string(20,version;1;number_format_string;;font;;font_color;;background_color;;pattern_color;;pattern_style;;CELL_BORDER_FORMATTING;NO;CELL_BORDER_COLOR;;CELL_BORDER_STYLE;;text_alignment;NO;horizontal_alignment;;vertical_alignment;;indent;;text_orientation;;text_control;;cell_protection;NO;hide_cells;;lock_cells;)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_drop_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_field_names_out" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_freeze_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_names_are_positions" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_offset_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet" PARM_VALUE="NO"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_level" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_password" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_protect_sheet_permissions" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_raster_type" PARM_VALUE="PNG"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_row_id_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_rowcolumn_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_sheet_order" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_col" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_writer_mode" PARM_VALUE="Insert"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_trunc_sheet" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_truncate_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="CSV2_1"
+#!   OVERRIDE="-CSV2_1_DATASET"
+#!   DATASET="CSV2_1/do_enhet_distrikt.csv"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET 
+#!   NAME="XLSXW_2"
+#!   OVERRIDE="-XLSXW_2_DATASET{*}"
+#!   DATASET="XLSXW_2/enkelt_fall"
+#! />
+#! <DATASET 
+#!   NAME="XLSXW_1"
+#!   OVERRIDE="-XLSXW_1_DATASET{*}"
+#!   DATASET="XLSXW_1/kapslad"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)do_enhet_distrikt.csv"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME destination_enkel_fall M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\FANOUT\enkelt_fall:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)enkelt_fall"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL DIRNAME destination_kapslad_fall kapslad:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)kapslad"
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="7"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ange önskad mappstruktur: Distrikt_@Value(Distrikt)/Enhet_@Value(Enhet)/@Value(DO_namn).xlsx&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1679.6712858738865 -246.77259824546289"
+#!   TOP_LEFT="1679.6712858738865 -246.77259824546289"
+#!   BOTTOM_RIGHT="3213.1221417395864 -364.27347325421294"
+#!   BOUNDING_RECT="1679.6712858738865 -246.77259824546289 1533.4508558656999 117.50087500875007"
+#!   ORDER="500000000000004"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.20784313725490197,0.40784313725490196,0.40784313725490196,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="24"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="21"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;inte ett måste, för visualiseringsskull&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="919.70229771561787 -254.09480003890954"
+#!   TOP_LEFT="919.70229771561787 -254.09480003890954"
+#!   BOTTOM_RIGHT="1477.188012053281 -439.09635005440964"
+#!   BOUNDING_RECT="919.70229771561787 -254.09480003890954 557.48571433766301 185.00155001550013"
+#!   ORDER="500000000000017"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.20784313725490197,0.40784313725490196,0.40784313725490196,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="11"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="27"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ange önskad mappstruktur: @Value(DO_namn).xlsx&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="-79.125142869621186 593.18718401390834"
+#!   TOP_LEFT="-79.125142869621186 593.18718401390834"
+#!   BOTTOM_RIGHT="612.8308036327121 394.43549649703317"
+#!   BOUNDING_RECT="-79.125142869621186 593.18718401390834 691.95594650233329 198.75168751687517"
+#!   ORDER="500000000000020"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   COLOUR="0.22745098039215686,0.2627450980392157,0.27058823529411763,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="25"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="16"
+#!   NAME="komplext "
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-183.98452382792212 -147.2678663075931"
+#!   ORDER="500000000000014"
+#!   PALETTE_COLOR="Color1"
+#!   BOTTOM_RIGHT="3470.8139289185096 -996.7632143853906"
+#!   BOUNDING_RECT="-183.98452382792212 -147.2678663075931 3654.7984527464318 849.49534807779753"
+#!   STICKY="true"
+#!   COLOUR="0.20784313725490197,0.40784313725490196,0.40784313725490196,1"
+#!   CONTENTS="5 9 11 15 24 21 14 29 28 7 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="18"
+#!   NAME="enkelt"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-183.98452382792212 724.03321435811756"
+#!   ORDER="500000000000015"
+#!   PALETTE_COLOR="Color2"
+#!   BOTTOM_RIGHT="3448.0864289162369 -76.835595195778751"
+#!   BOUNDING_RECT="-183.98452382792212 724.03321435811756 3632.0709527441591 800.86880955389631"
+#!   STICKY="false"
+#!   COLOUR="0.24313725490196078,0.40784313725490196,0.20784313725490197,1"
+#!   CONTENTS=""
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="776.55586910847467 -773.98784286544173"
+#!   BOUNDING_RECT="776.55586910847467 -773.98784286544173 430 71"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="_raw"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="Sorter"
+#!   VERSION="2"
+#!   POSITION="1029.1315834370462 -480.52428576233808"
+#!   BOUNDING_RECT="1029.1315834370462 -480.52428576233808 454 71"
+#!   ORDER="500000000000012"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Distrikt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Enhet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DO_namn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="Distrikt ALPHA ASCENDING Enhet ALPHA ASCENDING DO_namn ALPHA ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="1752.1967992255695 -773.98784286544173"
+#!   BOUNDING_RECT="1752.1967992255695 -773.98784286544173 430 71"
+#!   ORDER="500000000000013"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="_Sorted"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1269.7645894043246 310.73371077787743"
+#!   BOUNDING_RECT="1269.7645894043246 310.73371077787743 454 71"
+#!   ORDER="500000000000019"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fanout" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Distrikt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Enhet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DO_namn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; fanout SET_TO &lt;at&gt;Value&lt;openparen&gt;DO_namn&lt;closeparen&gt;.xlsx"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1870.4199466072469 -480.52428576233808"
+#!   BOUNDING_RECT="1870.4199466072469 -480.52428576233808 454 71"
+#!   ORDER="500000000000019"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19813"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fanout" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Distrikt" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Enhet" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="DO_namn" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; fanout SET_TO Distrikt_&lt;at&gt;Value&lt;openparen&gt;Distrikt&lt;closeparen&gt;&lt;solidus&gt;Enhet_&lt;at&gt;Value&lt;openparen&gt;Enhet&lt;closeparen&gt;&lt;solidus&gt;&lt;at&gt;Value&lt;openparen&gt;DO_namn&lt;closeparen&gt;.xlsx"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="2"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="14"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="30"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+GUI IGNORE SourceDataset_CSV2_1,CSV2_IN_FIELDS_GROUP_CSV2_1,CSV2_IN_DELIMITER_CSV2_1,CSV2_IN_FIELD_NAMES_LINE_CSV2_1,CSV2_IN_DATA_START_LINE_CSV2_1,CSV2_IN_ADVANCED_GROUP_CSV2_1,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_IN_FIELD_NAMES_GROUP_CSV2_1,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1,CSV2_IN_FIELD_VALUES_GROUP_CSV2_1,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1,CSV2_IN_ENCODING_GROUP_CSV2_1,CSV2_IN_ENCODING_CSV2_1,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1,CSV2_IN_READ_SKIPPED_LINES_CSV2_1,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1,DestDataset_XLSXW_1,XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1,XLSXW_OUT_OVERWRITE_FILE_XLSXW_1,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1,DestDataset_XLSXW_2,XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_2,XLSXW_OUT_OVERWRITE_FILE_XLSXW_2,XLSXW_OUT_TEMPLATEFILE_XLSXW_2,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2
+DEFAULT_MACRO SourceDataset_CSV2 $(FME_MF_DIR)do_enhet_distrikt.csv
+GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO destination_enkel_fall $(FME_MF_DIR)enkelt_fall
+GUI IGNORE OPTIONAL DIRNAME destination_enkel_fall M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\FANOUT\enkelt_fall:
+DEFAULT_MACRO destination_kapslad_fall $(FME_MF_DIR)kapslad
+GUI IGNORE OPTIONAL DIRNAME destination_kapslad_fall kapslad:
+INCLUDE [ if {{$(SourceDataset_CSV2)} == {}} { puts_real {Parameter 'SourceDataset_CSV2' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} CSV2
+MULTI_READER_KEYWORD{0} CSV2_1
+MULTI_READER_GEN_DIRECTIVES{0} PREVIEW_PLACEHOLDER,,READ_SKIPPED_LINES,No,ENFORCE_STRICT_SCHEMA,No,ENCODING,windows-1252,PRESERVE_SOURCE_ENCODING,No,TRIM_FIELD_NAME_QUALIFIERS,Yes,ADVANCED_GROUP,,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,CASE_SENSITIVE_FIELD_NAMES,Yes,SKIPPED_LINES_GROUP,,USE_CUSTOM_SCHEMA,NO,FEATURE_TYPE_NAME,FORMAT_NAME,FIELDS_GROUP,,FIELD_NAMES_LINE,1,CSV2_EXPOSE_FORMAT_ATTRS,,SCHEMA,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SCAN_TYPES,No,_MERGE_SCHEMAS,YES,DELIMITER,auto,EXPOSE_ATTRS_GROUP,,DATASET_GROUP,,SCHEMA_GENERATION_GROUP,,SCAN_MAX_ROWS,1000,DATA_START_LINE,2,TRIM_FIELD_VALUE_QUALIFIERS,Yes,ENCODING_GROUP,,FIELD_NAMES_GROUP,,UPDATE_FEATURE_TYPES,yes,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,FIELD_VALUES_GROUP,,SKIP_DUPLICATE_DELIMITERS,No,FIELD_SEPARATION_GROUP,,SCAN_ADDITIONAL_FIELDS,No
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} MULTI_WRITER
+MULTI_WRITER_KEYWORD{0} XLSXW_1_FANOUT
+XLSXW_1_FANOUT_TYPE{*} XLSXW
+XLSXW_1_FANOUT_KEYWORD{*} XLSXW_1
+XLSXW_1_FANOUT_DATASET_ORDER BY_INPUT
+MULTI_WRITER_TYPE{1} MULTI_WRITER
+MULTI_WRITER_KEYWORD{1} XLSXW_2_FANOUT
+XLSXW_2_FANOUT_TYPE{*} XLSXW
+XLSXW_2_FANOUT_KEYWORD{*} XLSXW_2
+XLSXW_2_FANOUT_DATASET_ORDER BY_INPUT
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_1
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source CSV file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_1
+DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset_CSV2)
+GUI MULTIFILE SourceDataset_CSV2_1 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_1 FORMAT_NAME
+CSV2_1_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_1 CSV2_IN_DELIMITER_CSV2_1%CSV2_IN_FIELD_NAMES_LINE_CSV2_1%CSV2_IN_DATA_START_LINE_CSV2_1 Fields
+DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_1 auto
+CSV2_1_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_1)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_1 auto%,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_1 1
+CSV2_1_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_1)"
+GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None%1%2%3%4%5 Field Names Line:
+GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None, 
+DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_1 2
+CSV2_1_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_1)"
+GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_1 1%MAX%0 Data Start Line:
+DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1%CSV2_IN_FIELD_NAMES_GROUP_CSV2_1%CSV2_IN_FIELD_VALUES_GROUP_CSV2_1%CSV2_IN_ENCODING_GROUP_CSV2_1%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
+DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Separation
+DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 No
+CSV2_1_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1)"
+GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 Yes%No Skip Duplicate Delimiters:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 Field Qualifier Character:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 Field Names
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes
+CSV2_1_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1)"
+GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes%No Case Sensitive Field Names:
+DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 No
+CSV2_1_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1)"
+GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 Yes%No Enforce Strict Schema:
+DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Field Values
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes%No Trim Field Qualifier Characters:
+DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_1%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Encoding
+DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_1 windows-1252
+CSV2_1_ENCODING "$(CSV2_IN_ENCODING_CSV2_1)"
+GUI STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_1 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 No
+CSV2_1_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1)"
+GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Yes%No Preserve Source Encoding:
+DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Skipped Lines
+DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_1 No
+CSV2_1_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_1)"
+GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Yes%No Read Skipped Lines:
+DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_1 1000
+CSV2_1_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_1 No
+CSV2_1_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1 No
+CSV2_1_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1 
+CSV2_1_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1 Yes
+CSV2_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1)"
+# ===========================================================================
+DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 
+CSV2_1_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1)"
+GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_1 DEFLINE
+CSV2_1_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_1)"
+# ============================================================================ 
+CSV2_1_GENERATE_FME_BUILD_NUM 19813
+CSV2_1_DATASET "$(SourceDataset_CSV2_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXW_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_XLSXW_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_1
+DEFAULT_MACRO DestDataset_XLSXW_1 $(destination_kapslad_fall)
+GUI FILENAME DestDataset_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Destination Microsoft Excel File:
+# ============================================================================
+DEFAULT_MACRO XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_1 XLSXW_OUT_OVERWRITE_FILE_XLSXW_1%XLSXW_OUT_TEMPLATEFILE_XLSXW_1%XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 Writer Parameters
+# Whether or not to overwrite the file
+DEFAULT_MACRO XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 No
+XLSXW_1_OVERWRITE_FILE "$(XLSXW_OUT_OVERWRITE_FILE_XLSXW_1)"
+GUI ACTIVECHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW_1 Yes%No,XLSXW_OUT_TEMPLATEFILE_XLSXW_1,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1,XLSXW_OUT_+TEMPLATEFILE+<Unused> Overwrite Existing File:
+# Template file option
+DEFAULT_MACRO XLSXW_OUT_TEMPLATEFILE_XLSXW_1 
+XLSXW_1_TEMPLATEFILE "$(XLSXW_OUT_TEMPLATEFILE_XLSXW_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST XLSXW_OUT_TEMPLATEFILE_XLSXW_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Template File:
+GUI LOOKUP XLSXW_OUT_TEMPLATEFILE_XLSXW_1 <Unused>, 
+DEFAULT_MACRO XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 
+XLSXW_1_TEMPLATE_SHEET "$(XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1)"
+GUI OPTIONAL DYNAMIC_SINGLE_SELECT XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 $[XLSXW_OUT_TEMPLATEFILE_XLSXW_1],_FORMAT_OVERRIDE_,XLSXR,RETRIEVE_ALL_TABLE_NAMES,Yes,IGNORE_ALL_NAMED_RANGES,Yes Template Sheet:
+GUI LOOKUP XLSXW_OUT_TEMPLATE_SHEET_XLSXW_1 <Unused>, 
+# ============================================================================
+# Parameters whose values will be percolated to the feature types, but will not
+# remain as writer level settings
+# Default to not drop feature type first
+DEFAULT_MACRO XLSXW_OUT_DROP_TABLE_XLSXW_1 No
+XLSXW_1_DROP_TABLE "$(XLSXW_OUT_DROP_TABLE_XLSXW_1)"
+# Default to not truncate feature type first (removeallcelldata,retainformatting/headers,etc.)
+DEFAULT_MACRO XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1 No
+XLSXW_1_TRUNCATE_TABLE "$(XLSXW_OUT_TRUNCATE_TABLE_XLSXW_1)"
+# Maintain compatibility with lenient attrName.* matching
+DEFAULT_MACRO XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1 yes
+XLSXW_1_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING "$(XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_1)"
+# Default to write out the field names
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1 Yes
+XLSXW_1_FIELD_NAMES_OUT "$(XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_1)"
+# Default writer mode
+DEFAULT_MACRO XLSXW_OUT_WRITER_MODE_XLSXW_1 Insert
+XLSXW_1_WRITER_MODE "$(XLSXW_OUT_WRITER_MODE_XLSXW_1)"
+# Default raster writing type
+DEFAULT_MACRO XLSXW_OUT_RASTER_FORMAT_XLSXW_1 PNG
+XLSXW_1_RASTER_FORMAT "$(XLSXW_OUT_RASTER_FORMAT_XLSXW_1)"
+# ============================================================================
+# Choose excel file protection mode
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_XLSXW_1 NO
+XLSXW_1_PROTECT_SHEET "$(XLSXW_OUT_PROTECT_SHEET_XLSXW_1)"
+# Whether or not to enable sheet password protection
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_PASSWORD "$(XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_1)"
+# Which kind of protection level
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_LEVEL "$(XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_1)"
+# Which kind of specific permissions will be enabled
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1 <Unused>
+XLSXW_1_PROTECT_SHEET_PERMISSIONS "$(XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_1)"
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1 Yes
+XLSXW_1_DESTINATION_DATASETTYPE_VALIDATION "$(XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_1)"
+DEFAULT_MACRO XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1 FEATURE
+XLSXW_1_COORDINATE_SYSTEM_GRANULARITY "$(XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_1)"
+# ============================================================================ 
+XLSXW_1_GENERATE_FME_BUILD_NUM 18578
+XLSXW_1_DATASET "$(DestDataset_XLSXW_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXW_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_2
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_XLSXW_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER XLSXW XLSXW_2
+DEFAULT_MACRO DestDataset_XLSXW_2 $(destination_enkel_fall)
+GUI FILENAME DestDataset_XLSXW_2 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|All_files(*)|* Destination Microsoft Excel File:
+# ============================================================================
+DEFAULT_MACRO XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_2 
+GUI OPTIONAL DISCLOSUREGROUP XLSXW_OUT_FME_GROUP_NAMED1_XLSXW_2 XLSXW_OUT_OVERWRITE_FILE_XLSXW_2%XLSXW_OUT_TEMPLATEFILE_XLSXW_2%XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 Writer Parameters
+# Whether or not to overwrite the file
+DEFAULT_MACRO XLSXW_OUT_OVERWRITE_FILE_XLSXW_2 No
+XLSXW_2_OVERWRITE_FILE "$(XLSXW_OUT_OVERWRITE_FILE_XLSXW_2)"
+GUI ACTIVECHOICE XLSXW_OUT_OVERWRITE_FILE_XLSXW_2 Yes%No,XLSXW_OUT_TEMPLATEFILE_XLSXW_2,XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2,XLSXW_OUT_+TEMPLATEFILE+<Unused> Overwrite Existing File:
+# Template file option
+DEFAULT_MACRO XLSXW_OUT_TEMPLATEFILE_XLSXW_2 
+XLSXW_2_TEMPLATEFILE "$(XLSXW_OUT_TEMPLATEFILE_XLSXW_2)"
+GUI OPTIONAL FILENAME_MUSTEXIST XLSXW_OUT_TEMPLATEFILE_XLSXW_2 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Template File:
+GUI LOOKUP XLSXW_OUT_TEMPLATEFILE_XLSXW_2 <Unused>, 
+DEFAULT_MACRO XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 
+XLSXW_2_TEMPLATE_SHEET "$(XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2)"
+GUI OPTIONAL DYNAMIC_SINGLE_SELECT XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 $[XLSXW_OUT_TEMPLATEFILE_XLSXW_2],_FORMAT_OVERRIDE_,XLSXR,RETRIEVE_ALL_TABLE_NAMES,Yes,IGNORE_ALL_NAMED_RANGES,Yes Template Sheet:
+GUI LOOKUP XLSXW_OUT_TEMPLATE_SHEET_XLSXW_2 <Unused>, 
+# ============================================================================
+# Parameters whose values will be percolated to the feature types, but will not
+# remain as writer level settings
+# Default to not drop feature type first
+DEFAULT_MACRO XLSXW_OUT_DROP_TABLE_XLSXW_2 No
+XLSXW_2_DROP_TABLE "$(XLSXW_OUT_DROP_TABLE_XLSXW_2)"
+# Default to not truncate feature type first (removeallcelldata,retainformatting/headers,etc.)
+DEFAULT_MACRO XLSXW_OUT_TRUNCATE_TABLE_XLSXW_2 No
+XLSXW_2_TRUNCATE_TABLE "$(XLSXW_OUT_TRUNCATE_TABLE_XLSXW_2)"
+# Maintain compatibility with lenient attrName.* matching
+DEFAULT_MACRO XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_2 yes
+XLSXW_2_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING "$(XLSXW_OUT_STRICT_SCHEMA_ADDITIONAL_ATTRIBUTE_MATCHING_XLSXW_2)"
+# Default to write out the field names
+DEFAULT_MACRO XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_2 Yes
+XLSXW_2_FIELD_NAMES_OUT "$(XLSXW_OUT_FIELD_NAMES_OUT_XLSXW_2)"
+# Default writer mode
+DEFAULT_MACRO XLSXW_OUT_WRITER_MODE_XLSXW_2 Insert
+XLSXW_2_WRITER_MODE "$(XLSXW_OUT_WRITER_MODE_XLSXW_2)"
+# Default raster writing type
+DEFAULT_MACRO XLSXW_OUT_RASTER_FORMAT_XLSXW_2 PNG
+XLSXW_2_RASTER_FORMAT "$(XLSXW_OUT_RASTER_FORMAT_XLSXW_2)"
+# ============================================================================
+# Choose excel file protection mode
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_XLSXW_2 NO
+XLSXW_2_PROTECT_SHEET "$(XLSXW_OUT_PROTECT_SHEET_XLSXW_2)"
+# Whether or not to enable sheet password protection
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_2 <Unused>
+XLSXW_2_PROTECT_SHEET_PASSWORD "$(XLSXW_OUT_PROTECT_SHEET_PASSWORD_XLSXW_2)"
+# Which kind of protection level
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_2 <Unused>
+XLSXW_2_PROTECT_SHEET_LEVEL "$(XLSXW_OUT_PROTECT_SHEET_LEVEL_XLSXW_2)"
+# Which kind of specific permissions will be enabled
+DEFAULT_MACRO XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_2 <Unused>
+XLSXW_2_PROTECT_SHEET_PERMISSIONS "$(XLSXW_OUT_PROTECT_SHEET_PERMISSIONS_XLSXW_2)"
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_2 Yes
+XLSXW_2_DESTINATION_DATASETTYPE_VALIDATION "$(XLSXW_OUT_DESTINATION_DATASETTYPE_VALIDATION_XLSXW_2)"
+DEFAULT_MACRO XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_2 FEATURE
+XLSXW_2_COORDINATE_SYSTEM_GRANULARITY "$(XLSXW_OUT_COORDINATE_SYSTEM_GRANULARITY_XLSXW_2)"
+# ============================================================================ 
+XLSXW_2_GENERATE_FME_BUILD_NUM 19813
+XLSXW_2_DATASET "$(DestDataset_XLSXW_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+XLSXW_1_DATASET{*} "$(DestDataset_XLSXW_1)"
+XLSXW_1_FANOUT_EXPRESSION @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fanout<closeparen>,XLSXW_1)
+XLSXW_2_DATASET{*} "$(DestDataset_XLSXW_2)"
+XLSXW_2_FANOUT_EXPRESSION @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fanout<closeparen>,XLSXW_2)
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)FANOUT.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_1 CSV2_1
+DEFAULT_MACRO DATASET_KEYWORD_XLSXW_1 XLSXW_1
+DEFAULT_MACRO DATASET_KEYWORD_XLSXW_2 XLSXW_2
+# -------------------------------------------------------------------------
+
+CSV2_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME FANOUT
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_CSV2_1)   INPUT FEATURE_TYPE *    ROUTE CSV2 CSV2_1::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_1) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+CSV2_1_MERGE_DEF CSV2_1::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,ID,string,Distrikt,string,Enhet,string,DO_namn,string
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV (CSV2_1) Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_1_0_yvsMpFt/4Gw=    OUTPUT FEATURE_TYPE CSV_CSV2_1_1_GVR6dhZPGYA=    OUTPUT FEATURE_TYPE CSV_CSV2_1_2_iT1GmLBriy4=
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE CSV_CSV2_1_2_iT1GmLBriy4=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "fanout" "SET_TO" "<at>Value<openparen>DO_namn<closeparen>.xlsx" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {_raw} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME _raw_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE CSV_CSV2_1_1_GVR6dhZPGYA=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { _raw }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME _raw_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA ID,varchar<openparen>255<closeparen>,Distrikt,varchar<openparen>255<closeparen>,Enhet,varchar<openparen>255<closeparen>,DO_namn,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF * SortFactory    FACTORY_NAME Sorter    INPUT  FEATURE_TYPE CSV_CSV2_1_0_yvsMpFt/4Gw=    FLUSH_WHEN_GROUPS_CHANGE No    SORT_BY Distrikt ALPHA ASCENDING Enhet ALPHA ASCENDING DO_namn ALPHA ASCENDING    OUTPUT SORTED FEATURE_TYPE Sorter_SORTED
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Sorter SORTED Splitter"   INPUT FEATURE_TYPE Sorter_SORTED   OUTPUT FEATURE_TYPE Sorter_SORTED_0_3iJewJ+xcb8=   OUTPUT FEATURE_TYPE Sorter_SORTED_1_AdG4IKX8gxs=
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {_Sorted} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME _Sorted_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Sorter_SORTED_1_AdG4IKX8gxs=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { _Sorted }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME _Sorted_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA ID,varchar<openparen>255<closeparen>,Distrikt,varchar<openparen>255<closeparen>,Enhet,varchar<openparen>255<closeparen>,DO_namn,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Sorter_SORTED_0_3iJewJ+xcb8=    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "fanout" "SET_TO" "Distrikt_<at>Value<openparen>Distrikt<closeparen><solidus>Enhet_<at>Value<openparen>Enhet<closeparen><solidus><at>Value<openparen>DO_namn<closeparen>.xlsx" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>enkelt_fall<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_2_OUTPUT TO XLSXW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>kapslad<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
+# -------------------------------------------------------------------------
+XLSXW_1_DEF kapslad   xlsx_drop_sheet              No   xlsx_trunc_sheet             No   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   fanout                       auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   ID                           string(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   Distrikt                     string(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   Enhet                        string(10,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   DO_namn                      string(50,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)
+# -------------------------------------------------------------------------
+XLSXW_2_DEF enkelt_fall   xlsx_drop_sheet              No   xlsx_trunc_sheet             No   xlsx_sheet_order             ""   xlsx_freeze_end_row          ""   xlsx_names_are_positions     No   xlsx_field_names_out         Yes   xlsx_start_col               ""   xlsx_start_row               ""   xlsx_offset_col              ""   xlsx_offset_row              ""   xlsx_raster_type             PNG   xlsx_table_writer_mode       Insert   xlsx_row_id_column           ""   xlsx_protect_sheet           NO   xlsx_protect_sheet_level     <Unused>   xlsx_protect_sheet_password  <Unused>   xlsx_protect_sheet_permissions <Unused>   fanout                       auto(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   ID                           string(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   Distrikt                     string(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   Enhet                        string(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)   DO_namn                      string(20,version<semicolon>1<semicolon>number_format_string<semicolon><semicolon>font<semicolon><semicolon>font_color<semicolon><semicolon>background_color<semicolon><semicolon>pattern_color<semicolon><semicolon>pattern_style<semicolon><semicolon>CELL_BORDER_FORMATTING<semicolon>NO<semicolon>CELL_BORDER_COLOR<semicolon><semicolon>CELL_BORDER_STYLE<semicolon><semicolon>text_alignment<semicolon>NO<semicolon>horizontal_alignment<semicolon><semicolon>vertical_alignment<semicolon><semicolon>indent<semicolon><semicolon>text_orientation<semicolon><semicolon>text_control<semicolon><semicolon>cell_protection<semicolon>NO<semicolon>hide_cells<semicolon><semicolon>lock_cells<semicolon>)
