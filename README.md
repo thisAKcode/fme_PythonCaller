@@ -194,3 +194,7 @@ class FeatureProcessor(object):
 ``` 
 PrevSampleDateTime = feature[-1].sampleDateTime
 ``` 
+
+
+# Create an attribute that gives you path to google street view at some particular location
+http://maps.google.com/?cbll=@Value(GPS_koordinat)&cbp=12,20.09,,0,5&layer=c?hl=sv 
