@@ -231,3 +231,24 @@ def processFeature(feature):
         distance = info[i]['distance']
         feature.setAttribute("grannar", json.dumps(distance))
 ``` 
+
+# convert dictionary string to dictionary
+
+``` 
+import fme
+import fmeobjects
+import json
+
+def processFeature(feature):
+    data = feature.getAttribute('body')
+    
+    # using json.loads() 
+    # convert dictionary string to dictionary 
+
+    grannar = json.loads(data)
+    print("success")
+    
+    for k,v in grannar.items():
+        print(k, v)
+
+``` 
