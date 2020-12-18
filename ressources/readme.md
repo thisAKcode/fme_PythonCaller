@@ -10,7 +10,7 @@
 * https://www.bjhzfs.com/knowledge/articles/60319/pythoncaller-transformer.html
 
 
-***Statistics inside python caller
+# Statistics inside python caller
 
 https://knowledge.safe.com/questions/82491/statistics-inside-a-python-caller.html
 Walktrough is here: 
@@ -18,7 +18,6 @@ M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\python_caller\python_c
 
 
 
-M:\_on_the_go\Medarbetare\_Aleksei_Kupiakov\BAST_PRACTICE\python_caller_Functions_fme_community_best.fmw
 
 About json in pythoncaller
 Bipartite graph
