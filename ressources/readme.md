@@ -3,8 +3,11 @@
 
 
 
+# point-clouds
+* https://community.safe.com/s/article/point-clouds-for-profiling-and-slicing
+*https://community.safe.com/s/article/derive-a-boundary-from-a-lidar-point-cloud
 
-
+# ---
 * https://knowledge.safe.com/topics/python+for+beginners.html
 
 * https://www.bjhzfs.com/knowledge/articles/60319/pythoncaller-transformer.html
