@@ -10,9 +10,7 @@ Here I collect some useful scripts to manipulate features using Python in FME.
 ```
 import fme
 import fmeobjects
-# Template Function interface:
-# When using this function, make sure its name is set as the value of
-# the 'Class or Function to Process Features' transformer parameter
+
 def processFeature(feature):
 
     string1 = feature.getAttribute('CSV_COLLECTION')
@@ -78,15 +76,11 @@ def processFeature(feature):
 ``` 
 import fme
 import fmeobjects
-# Template Function interface:
-# When using this function, make sure its name is set as the value of
-# the 'Class or Function to Process Features' transformer parameter
+
 def processFeature(feature):
     pass
 
-# Template Class Interface:
-# When using this class, make sure its name is set as the value of
-# the 'Class or Function to Process Features' transformer parameter
+
 class FeatureProcessor(object):
     def __init__(self):
         pass
@@ -119,9 +113,7 @@ def getDistance(f1, f2):
     dist = math.sqrt(x*x+y*y)
     return dist
 
-# Template Class Interface:
-# When using this class, make sure its name is set as the value of
-# the 'Class or Function to Process Features' transformer parameter
+
 class FeatureProcessor(object):
     def __init__(self):
         self.features = []
