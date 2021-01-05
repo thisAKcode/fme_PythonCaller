@@ -356,3 +356,14 @@ def concat_list(feature):
     feature.setAttribute('result', str(cnt_elmnts))
 
 ```
+
+# FMEFeature.performFunction to compute length
+
+source: <https://community.safe.com/s/question/0D54Q000080hL4iSAE/calculating-the-length-of-a-line-using-python>
+
+```
+# Use the FMEFeature.performFunction to call the @Length() function
+len2 = float(feature.performFunction('@Length(2)')) # 2D Length
+len3 = float(feature.performFunction('@Length(3)')) # 3D Length
+```
+
