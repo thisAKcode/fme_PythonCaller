@@ -19,6 +19,18 @@ def processFeature(feature):
     for i, j in enumerate(b):
         feature.setAttribute('list{'+str(i)+'}',j)
 ```
+Or as per this article> <https://community.safe.com/s/question/0D54Q000080hTgYSAU/set-a-list-attribute-in-python>
+```
+for i in range(numberFeatures):
+    feature.setAttribute("lstGrouped{%d}.STRATA_UNIT_AREA" % i, str(oneStrataUnitArea))
+```
+Here you see how to access fme list in pythoncaller. 
+Use curly braces when using getAttribute.
+
+```
+list = feature.getAttribute("lstGrouped{}.STRATA_UNIT_AREA")
+```
+
 ## 2. access *.py file from within fme
 source : <https://community.safe.com/s/question/0D54Q000080hSCgSAM/general-class-in-python-where-to-place>
 ```
