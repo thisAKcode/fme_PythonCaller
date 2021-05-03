@@ -62,6 +62,15 @@ def processFeature(feature):
         if OVERLAP:
             feature.setAttribute("CHANGE_BI_OPERATION", 'change')
 ``` 
+## 3.1 compare two list to find uncommon elements (XOR)
+```
+my_cities = ['Rome', 'Paris', 'Madrid', 'Chicago', 'Seville', 'Berlin']
+other_cities = ['Paris', 'Boston', 'Sydney', 'Madrid', 'Moscow', 'Lima']
+
+overlay = (set(my_cities) & set(other_cities))
+# here goes XOR
+non_overlay = (set(my_cities) ^ set(other_cities))
+```
 
 ## 3. zip two fme lists
 ```
