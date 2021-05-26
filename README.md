@@ -388,3 +388,43 @@ len2 = float(feature.performFunction('@Length(2)')) # 2D Length
 len3 = float(feature.performFunction('@Length(3)')) # 3D Length
 ```
 
+# itertools.groupby function
+```
+from collections import namedtuple  
+from itertools import groupby
+from pprint import pprint as pp
+
+User = namedtuple('User', 'name job')
+users = [User(name='Alex', job='Snake Milker'),
+        User(name='Bob', job='Reindeer Walker'),
+        User(name='Mary', job='Happiness Advocate'),
+        User(name='Caro', job='Teddy Bear Surgeon'),
+        User(name='Lilie', job='Teddy Bear Surgeon'),
+        User(name='Pierre', job='Happiness Advocate'),
+        User(name='Guido', job='Snake Milker'),
+        User(name='Michael', job='Snake Milker'),
+        User(name='Lee', job='Snake Milker'),
+        User(name='Denis', job='Snake Milker'),
+        User(name='Antony', job='Teddy Bear Surgeon'),
+        User(name='Andrew', job='Snake Milker'),
+        User(name='Luke', job='Teddy Bear Surgeon'),
+        User(name='Joel', job='Reindeer Walker'),
+        User(name='Will', job='Reindeer Walker'),
+        User(name='Patrick', job='Reindeer Walker'),
+        User(name='Liam', job='Champagne Tester'),
+        User(name='Sofie', job='Reindeer Walker'),
+        User(name='Curt', job='Teddy Bear Surgeon'),
+        User(name='Gabriel', job='Reindeer Walker')]
+
+
+users.sort(key=lambda x: x.job)
+
+# job as the key
+# and list of user names having that job
+users_by_role = {
+    item[0]: list(item[1])
+    for item in groupby(users, lambda x: x.job)
+}
+
+pp(users_by_role)
+```
