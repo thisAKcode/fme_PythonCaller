@@ -428,3 +428,34 @@ users_by_role = {
 
 pp(users_by_role)
 ```
+## datetime for weekly CRONed executions
+"""
+if (todays_date - last_day_of_month) < 7 : # in days
+create attribute "lastrun" set it to "yes"
+meaning the current script execution is the last one for the current month.
+""" 
+
+```
+import fme
+import fmeobjects
+from datetime import date
+from calendar import monthrange
+
+
+today = date.today()
+today_day = today.strftime("%d")
+last_day_this_month = monthrange(today.year, today.month)[1]
+
+def last_run_monthly(today, last_day_current_month): 
+    # receives todays date in days and last date of current month in days 
+    # return True whether there's less than 7 days before the end of month
+    if abs(int(today_day) - int(last_day_this_month)) < 7:
+        return True
+        
+def processFeature(feature, today_day=today_day, last_day_this_month=last_day_this_month):
+    
+    if last_run_monthly(today_day, last_day_this_month):
+        feature.setAttribute("lastrun", "yes")
+    else:
+        feature.setAttribute("lastrun", "no")
+```
